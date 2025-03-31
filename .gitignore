@@ -122,5 +122,4 @@ wp-content/wp-rocket-config/
 /.htaccess
 /sitemap.xml
 /sitemap.xml.gz
-/wp-content/themes/kato/node_modules/
-/wp-content/themes/toka/node_modules/
+/wp-content/themes/tun/node_modules/
