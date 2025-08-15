@@ -20,4 +20,4 @@ require_once plugin_dir_path( __FILE__ ).'inc/options/functions.php';
 
 /* post type */
 require plugin_dir_path( __FILE__ ).'inc/post_type.php';
-require plugin_dir_path( __FILE__ ).'inc/tuntheme-functions.php';
+require plugin_dir_path( __FILE__ ).'inc/tuntheme_function.php';
