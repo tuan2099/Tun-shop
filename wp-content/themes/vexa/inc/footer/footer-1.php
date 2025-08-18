@@ -20,16 +20,16 @@
 
         <div class="contact-info">
             <ul class="contact-list">
-                <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="glyph-icon flaticon-interface"></i> <?php echo esc_html($vexatheme_option['email']); ?><span><?php esc_html_e( 'Email Address ', 'majed' ) ?></span></a>
+                <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="glyph-icon flaticon-interface"></i> <?php echo esc_html($vexatheme_option['email']); ?><span><?php esc_html_e( 'Email Address ', 'vexa' ) ?></span></a>
                     <div class="clearfix"></div>
                 </li>
-                <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-maps-and-flags"></i> <?php echo esc_html($vexatheme_option['location']); ?><span><?php esc_html_e( 'Office Address', 'majed' ) ?></span> </a>
+                <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-maps-and-flags"></i> <?php echo esc_html($vexatheme_option['location']); ?><span><?php esc_html_e( 'Office Address', 'vexa' ) ?></span> </a>
                     <div class="clearfix"></div>
                 </li>
-                <li><a href="<?php echo esc_url( ($vexatheme_option['telphone']) ); ?>"><i class="glyph-icon flaticon-communications"></i> <?php echo esc_html($vexatheme_option['telphone']); ?><span><?php esc_html_e( 'Call us free', 'majed' ) ?></span> </a>
+                <li><a href="<?php echo esc_url( ($vexatheme_option['telphone']) ); ?>"><i class="glyph-icon flaticon-communications"></i> <?php echo esc_html($vexatheme_option['telphone']); ?><span><?php esc_html_e( 'Call us free', 'vexa' ) ?></span> </a>
                     <div class="clearfix"></div>
                 </li>
-                <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-time"></i> <?php echo esc_html($vexatheme_option['work_time']); ?><span><?php esc_html_e( 'Work Hours', 'majed' ) ?></span> </a>
+                <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-time"></i> <?php echo esc_html($vexatheme_option['work_time']); ?><span><?php esc_html_e( 'Work Hours', 'vexa' ) ?></span> </a>
                     <div class="clearfix"></div>
                 </li>
             </ul>

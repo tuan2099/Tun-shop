@@ -14,8 +14,8 @@
             <div class="row">
                 <div class="col-lg-9">
                     <ul class="contact">
-                        <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="fa fa-envelope-open-o"></i> <span><?php esc_attr_e( 'Email Address :', 'majed' ) ?></span> <?php echo esc_html($vexatheme_option['email']); ?></a></li>
-                        <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="fa fa-map-marker"></i> <span><?php esc_attr_e( 'Office Address :', 'majed' ) ?></span> <?php echo esc_html($vexatheme_option['location']); ?></a></li>
+                        <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="fa fa-envelope-open-o"></i> <span><?php esc_attr_e( 'Email Address :', 'vexa' ) ?></span> <?php echo esc_html($vexatheme_option['email']); ?></a></li>
+                        <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="fa fa-map-marker"></i> <span><?php esc_attr_e( 'Office Address :', 'vexa' ) ?></span> <?php echo esc_html($vexatheme_option['location']); ?></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
@@ -50,13 +50,13 @@
                     <div class="col-lg-9 mobile-none">
                         <div class=" contact-info">
                             <ul class="contact-list">
-                                <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="glyph-icon flaticon-interface"></i> <?php echo esc_html($vexatheme_option['email']); ?><span><?php esc_html_e( 'Email Address ', 'majed' ) ?></span></a>
+                                <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="glyph-icon flaticon-interface"></i> <?php echo esc_html($vexatheme_option['email']); ?><span><?php esc_html_e( 'Email Address ', 'vexa' ) ?></span></a>
                                     <div class="clearfix"></div>
                                 </li>
-                                <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-maps-and-flags"></i> <?php echo esc_html($vexatheme_option['location']); ?><span><?php esc_html_e( 'Office Address', 'majed' ) ?></span> </a>
+                                <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-maps-and-flags"></i> <?php echo esc_html($vexatheme_option['location']); ?><span><?php esc_html_e( 'Office Address', 'vexa' ) ?></span> </a>
                                     <div class="clearfix"></div>
                                 </li>
-                                <li><a href="<?php echo esc_url( ($vexatheme_option['telphone']) ); ?>"><i class="glyph-icon flaticon-communications"></i> <?php echo esc_html($vexatheme_option['telphone']); ?><span><?php esc_html_e( 'Call us free', 'majed' ) ?></span> </a>
+                                <li><a href="<?php echo esc_url( ($vexatheme_option['telphone']) ); ?>"><i class="glyph-icon flaticon-communications"></i> <?php echo esc_html($vexatheme_option['telphone']); ?><span><?php esc_html_e( 'Call us free', 'vexa' ) ?></span> </a>
                                     <div class="clearfix"></div>
                                 </li>
                             </ul>

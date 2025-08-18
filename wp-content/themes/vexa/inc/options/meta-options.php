@@ -75,30 +75,30 @@ function vexatheme_meta_boxs()
 	/** page options */
 	MetaFramework::setMetabox(array(
 		'id' => '_page_main_options',
-		'label' => esc_html__('Page Setting', 'majed') ,
+		'label' => esc_html__('Page Setting', 'vexa') ,
 		'post_type' => 'page',
 		'context' => 'advanced',
 		'priority' => 'default',
 		'open_expanded' => false,
 		'sections' => array(
   			array(
-  				'title' => esc_html__('Header', 'majed') ,
+  				'title' => esc_html__('Header', 'vexa') ,
   				'id' => 'tab-page-header',
   				'icon' => 'el el-credit-card',
   				'fields' => array(
   					array(
   						'id' => 'custom_header',
   						'type' => 'button_set',
-  						'title' => esc_html__('Custom', 'majed') ,
+  						'title' => esc_html__('Custom', 'vexa') ,
   						'options' => array(
-  							'1' =>  esc_html__('Yes', 'majed') ,
-  							'' => esc_html__('No', 'majed') ,
+  							'1' =>  esc_html__('Yes', 'vexa') ,
+  							'' => esc_html__('No', 'vexa') ,
   						) ,
   						'default' => ''
   					) ,
   					array(
-  						'title' => esc_html__('Logo', 'majed') ,
-  						'subtitle' => esc_html__('Select an image file for your logo.', 'majed') ,
+  						'title' => esc_html__('Logo', 'vexa') ,
+  						'subtitle' => esc_html__('Select an image file for your logo.', 'vexa') ,
   						'id' => 'main_logo',
   						'type' => 'media',
   						'url' => false,
@@ -109,8 +109,8 @@ function vexatheme_meta_boxs()
   					) ,
   					array(
   						'id' => 'header_layout',
-  						'title' => esc_html__('Layouts', 'majed') ,
-  						'subtitle' => esc_html__('select a layout for header', 'majed') ,
+  						'title' => esc_html__('Layouts', 'vexa') ,
+  						'subtitle' => esc_html__('select a layout for header', 'vexa') ,
   						'default' => '1',
   						'type' => 'image_select',
   						'options' => array(
@@ -124,14 +124,14 @@ function vexatheme_meta_boxs()
   				)
   			) ,
         array(
-          'title' => esc_html__('Footer', 'majed') ,
+          'title' => esc_html__('Footer', 'vexa') ,
           'id' => 'tab-page-footer',
           'icon' => 'el el-credit-card',
           'fields' => array(
             array(
               'id' => 'custom_footer',
               'type' => 'button_set',
-              'title' => esc_html__('Custom', 'majed') ,
+              'title' => esc_html__('Custom', 'vexa') ,
               'options' => array(
                 '1' => 'Yes',
                 '' => 'No',
@@ -140,8 +140,8 @@ function vexatheme_meta_boxs()
             ) ,
             array(
               'id' => 'footer_layout',
-              'title' => esc_html__('Layouts', 'majed') ,
-              'subtitle' => esc_html__('select a layout for footer', 'majed') ,
+              'title' => esc_html__('Layouts', 'vexa') ,
+              'subtitle' => esc_html__('select a layout for footer', 'vexa') ,
               'default' => '1',
               'type' => 'image_select',
               'options' => array(
@@ -154,14 +154,14 @@ function vexatheme_meta_boxs()
           )
         ) ,
         array(
-          'title' => esc_html__('Style', 'majed') ,
+          'title' => esc_html__('Style', 'vexa') ,
           'id' => 'tab-page-style',
           'icon' => 'el el-credit-card',
           'fields' => array(
             array(
               'id' => 'custom_style',
               'type' => 'button_set',
-              'title' => esc_html__('Custom', 'majed') ,
+              'title' => esc_html__('Custom', 'vexa') ,
               'options' => array(
                 '1' => 'Yes',
                 '' => 'No',
@@ -169,18 +169,18 @@ function vexatheme_meta_boxs()
               'default' => ''
             ) ,
             array(
-                'subtitle' => esc_html__('Set primary color.', 'majed'),
+                'subtitle' => esc_html__('Set primary color.', 'vexa'),
                 'id' => 'primary_color',
                 'type' => 'color',
-                'title' => esc_html__('Primary Color', 'majed'),
+                'title' => esc_html__('Primary Color', 'vexa'),
                 'default' => '#2b616d',
                 'required' => array( 'custom_style', '=', '1' )
             ),
             array(
-                'subtitle' => esc_html__('Set Second color.', 'majed'),
+                'subtitle' => esc_html__('Set Second color.', 'vexa'),
                 'id' => 'second_color',
                 'type' => 'color',
-                'title' => esc_html__('Second Color', 'majed'),
+                'title' => esc_html__('Second Color', 'vexa'),
                 'default' => '#79ad5a',
                 'required' => array( 'custom_style', '=', '1' )
             ),
@@ -195,19 +195,19 @@ function vexatheme_meta_boxs()
     /** Service options */
 	MetaFramework::setMetabox(array(
 		'id' => '_service_options',
-		'label' => esc_html__('Service Options', 'majed') ,
+		'label' => esc_html__('Service Options', 'vexa') ,
 		'post_type' => 'service',
 		'context' => 'advanced',
 		'priority' => 'default',
 		'open_expanded' => false,
 		'sections' => array(
 			array(
-				'title' => esc_html__('Information', 'majed') ,
+				'title' => esc_html__('Information', 'vexa') ,
 				'id' => 'tab-service-bc',
 				'icon' => 'el el-photo',
 				'fields' => array(
 					array(
-  						'title' => esc_html__('Service cart image', 'majed') ,
+  						'title' => esc_html__('Service cart image', 'vexa') ,
   						'id' => 'service_cart_img',
   						'type' => 'media',
   						'url' => false,
@@ -215,13 +215,13 @@ function vexatheme_meta_boxs()
                     array(
   						'id' => 'service_number',
   						'type' => 'text',
-  						'title' => esc_html__('Service Number', 'majed'),
+  						'title' => esc_html__('Service Number', 'vexa'),
   						'default' => '01',
                     ),
                     array(
   						'id' => 'service_class',
   						'type' => 'text',
-  						'title' => esc_html__('HTML class', 'majed'),
+  						'title' => esc_html__('HTML class', 'vexa'),
   						'default' => ' ',
                     ),
 				)
@@ -234,7 +234,7 @@ function vexatheme_meta_boxs()
  /** Portfolio options */
 	MetaFramework::setMetabox(array(
 		'id' => '_portfolio_options',
-		'label' => esc_html__('Client Information', 'majed') ,
+		'label' => esc_html__('Client Information', 'vexa') ,
 		'post_type' => 'portfolio',
 		'context' => 'advanced',
 		'priority' => 'default',
@@ -244,7 +244,7 @@ function vexatheme_meta_boxs()
        
             # Information
 			array(
-				'title' => esc_html__('Information', 'majed') ,
+				'title' => esc_html__('Information', 'vexa') ,
 				'id' => 'tab-service-bc',
 				'icon' => 'el el-photo',
 				'fields' => array(
@@ -252,19 +252,19 @@ function vexatheme_meta_boxs()
                     array(
                         'id' => 'portfolio_client',
                         'type' => 'text',
-                        'title' => esc_html__('Project Client', 'majed'),
+                        'title' => esc_html__('Project Client', 'vexa'),
                         'default' => 'Salim Co.',
                     ),
                     array(
                         'id' => 'portfolio_location',
                         'type' => 'text',
-                        'title' => esc_html__('Project Location', 'majed'),
+                        'title' => esc_html__('Project Location', 'vexa'),
                         'default' => 'Washington',
                     ),
                     array(
                         'id' => 'portfolio_service_type',
                         'type' => 'text',
-                        'title' => esc_html__('Service Type', 'majed'),
+                        'title' => esc_html__('Service Type', 'vexa'),
                         'default' => 'website design',
                     ),
 
@@ -283,7 +283,7 @@ function vexatheme_meta_boxs()
     /** Team options */
 	MetaFramework::setMetabox(array(
 		'id' => '_team_options',
-		'label' => esc_html__('Personal Information', 'majed') ,
+		'label' => esc_html__('Personal Information', 'vexa') ,
 		'post_type' => 'team',
 		'context' => 'advanced',
 		'priority' => 'default',
@@ -293,7 +293,7 @@ function vexatheme_meta_boxs()
 
             # Social Media
 			array(
-				'title' => esc_html__('Social Media', 'majed') ,
+				'title' => esc_html__('Social Media', 'vexa') ,
 				'id' => 'tab-service-bc',
 				'icon' => 'el el-photo',
 				'fields' => array(
@@ -301,25 +301,25 @@ function vexatheme_meta_boxs()
                     array(
                         'id' => 'team_facebook_url',
                         'type' => 'text',
-                        'title' => esc_html__('Facebook URL', 'majed'),
+                        'title' => esc_html__('Facebook URL', 'vexa'),
                         'default' => '#',
                     ),
                     array(
                         'id' => 'team_twitter_url',
                         'type' => 'text',
-                        'title' => esc_html__('Twitter URL', 'majed'),
+                        'title' => esc_html__('Twitter URL', 'vexa'),
                         'default' => '#',
                     ),
                     array(
                         'id' => 'team_inkedin_url',
                         'type' => 'text',
-                        'title' => esc_html__('Inkedin URL', 'majed'),
+                        'title' => esc_html__('Inkedin URL', 'vexa'),
                         'default' => '#',
                     ),
                     array(
                         'id' => 'team_instagram_url',
                         'type' => 'text',
-                        'title' => esc_html__('Instagram URL', 'majed'),
+                        'title' => esc_html__('Instagram URL', 'vexa'),
                         'default' => '#',
                     ),
 
@@ -330,7 +330,7 @@ function vexatheme_meta_boxs()
 
             # Information
 			array(
-				'title' => esc_html__('Information', 'majed') ,
+				'title' => esc_html__('Information', 'vexa') ,
 				'id' => 'tab-service-bc',
 				'icon' => 'el el-photo',
 				'fields' => array(
@@ -338,7 +338,7 @@ function vexatheme_meta_boxs()
                     array(
                         'id' => 'team_qualification',
                         'type' => 'text',
-                        'title' => esc_html__('Qualification', 'majed'),
+                        'title' => esc_html__('Qualification', 'vexa'),
                         'default' => 'CEO/Founder',
                     ),
 
@@ -355,7 +355,7 @@ function vexatheme_meta_boxs()
      /** Testimonial options */
 	MetaFramework::setMetabox(array(
 		'id' => '_testimonial_options',
-		'label' => esc_html__('Client Information', 'majed') ,
+		'label' => esc_html__('Client Information', 'vexa') ,
 		'post_type' => 'testimonial',
 		'context' => 'advanced',
 		'priority' => 'default',
@@ -365,7 +365,7 @@ function vexatheme_meta_boxs()
 
             # Information
 			array(
-				'title' => esc_html__('Information', 'majed') ,
+				'title' => esc_html__('Information', 'vexa') ,
 				'id' => 'tab-service-bc',
 				'icon' => 'el el-photo',
 				'fields' => array(
@@ -373,7 +373,7 @@ function vexatheme_meta_boxs()
                     array(
                         'id' => 'testimonial_qualification',
                         'type' => 'text',
-                        'title' => esc_html__('Client Qualification', 'majed'),
+                        'title' => esc_html__('Client Qualification', 'vexa'),
                         'default' => ' ',
                     ),
 
@@ -390,7 +390,7 @@ function vexatheme_meta_boxs()
      /** Clients options */
 	MetaFramework::setMetabox(array(
 		'id' => '_clients_options',
-		'label' => esc_html__('Client Information', 'majed') ,
+		'label' => esc_html__('Client Information', 'vexa') ,
 		'post_type' => 'clients',
 		'context' => 'advanced',
 		'priority' => 'default',
@@ -400,7 +400,7 @@ function vexatheme_meta_boxs()
 
             # Information
 			array(
-				'title' => esc_html__('Information', 'majed') ,
+				'title' => esc_html__('Information', 'vexa') ,
 				'id' => 'tab-service-bc',
 				'icon' => 'el el-photo',
 				'fields' => array(
@@ -408,7 +408,7 @@ function vexatheme_meta_boxs()
                     array(
                         'id' => 'client_url',
                         'type' => 'text',
-                        'title' => esc_html__('Client URL', 'majed'),
+                        'title' => esc_html__('Client URL', 'vexa'),
                         'default' => ' ',
                     ),
 
@@ -426,57 +426,57 @@ function vexatheme_meta_boxs()
     /** pricing options */
     MetaFramework::setMetabox(array(
         'id' => '_pricing_options',
-        'label' => esc_html__('Pricing Setting', 'majed'),
+        'label' => esc_html__('Pricing Setting', 'vexa'),
         'post_type' => 'pricing',
         'context' => 'advanced',
         'priority' => 'default',
         'open_expanded' => false,
         'sections' => array(
             array(
-                'title' =>esc_html__('Pricing Subtitle', 'majed'),
+                'title' =>esc_html__('Pricing Subtitle', 'vexa'),
                 'id' => 'tab-pricing-st',
                 'icon' => 'el el-photo',
                 'fields' => array(
                     array(
                         'id' => 'pricing_subtitle',
-                        'title' => esc_html__('Pricing subtitle','majed'),
+                        'title' => esc_html__('Pricing subtitle','vexa'),
                         'type' => 'text',
                     ),
                 )
             ),
             array(
-                'title' =>esc_html__('Pricing Price', 'majed'),
+                'title' =>esc_html__('Pricing Price', 'vexa'),
                 'id' => 'tab-service-bc',
                 'icon' => 'el el-photo',
                 'fields' => array(
                     array(
                         'id' => 'pricing_currency',
-                        'title' => esc_html__('Currency Unit','majed'),
+                        'title' => esc_html__('Currency Unit','vexa'),
                         'type' => 'text',
                         'placeholder' => '$'
                     ),
                     array(
                         'id' => 'pricing_price',
-                        'title' => esc_html__('Price','majed'),
+                        'title' => esc_html__('Price','vexa'),
                         'type' => 'text',
                         'placeholder' => '199'
                     ),
                 )
             ),
             array(
-                'title' =>esc_html__('Pricing Button', 'majed'),
+                'title' =>esc_html__('Pricing Button', 'vexa'),
                 'id' => 'tab-service-bc',
                 'icon' => 'el el-photo',
                 'fields' => array(
                     array(
                         'id' => 'pricing_btn_text',
-                        'title' => esc_html__('Button Text','majed'),
+                        'title' => esc_html__('Button Text','vexa'),
                         'type' => 'text',
                         'placeholder' => 'Order now'
                     ),
                     array(
                         'id' => 'pricing_btn_link',
-                        'title' => esc_html__('Button Url','majed'),
+                        'title' => esc_html__('Button Url','vexa'),
                         'type' => 'text',
                         'placeholder' => '#'
                     ),
@@ -486,13 +486,13 @@ function vexatheme_meta_boxs()
                 )
             ),
             array(
-                'title' =>esc_html__('Pricing Feature', 'majed'),
+                'title' =>esc_html__('Pricing Feature', 'vexa'),
                 'id' => 'tab-pricing-feature',
                 'icon' => 'el el-photo',
                 'fields' => array(
                     array(
                         'id' => 'pricing_feature',
-                        'title' => esc_html__('Pricing feature','majed'),
+                        'title' => esc_html__('Pricing feature','vexa'),
                         'type' => 'switch',
                         'default'=>false,
                     ),

@@ -2,7 +2,7 @@
 /**
  * vexatheme Theme Customizer
  *
- * @package majed
+ * @package vexa
  */
 
 /**

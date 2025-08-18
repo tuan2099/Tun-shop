@@ -30,7 +30,7 @@
             <?php the_excerpt(); ?>
         </div>
         <a href="<?php the_permalink(); ?>" class="read_more">
-            <?php esc_html_e('Read More', 'majed'); ?>
+            <?php esc_html_e('Read More', 'vexa'); ?>
         </a>
     </div>
 </div>
@@ -69,7 +69,7 @@
                 <?php the_excerpt(); ?>
             </div>
             <a href="<?php the_permalink(); ?>" class="read_more">
-                <?php esc_html_e('Read More', 'majed'); ?>
+                <?php esc_html_e('Read More', 'vexa'); ?>
             </a>
         </div>
     </div>
@@ -205,7 +205,7 @@
                     <a class="author-img">
                         <?php echo get_avatar( get_the_author_meta('email'), '170' ); ?>
                     </a>
-                    <span><?php esc_html_e('by', 'majed'); ?> <?php the_author_posts_link(); ?></span>
+                    <span><?php esc_html_e('by', 'vexa'); ?> <?php the_author_posts_link(); ?></span>
                 </li>
                 <li class="date"> <span class="icon_clock_alt"></span>
                     <?php the_time( get_option('date_format') ); ?>
@@ -230,7 +230,7 @@
             <?php the_excerpt(); ?>
         </div>
         <a href="<?php the_permalink(); ?>" class="read_more">
-            <?php esc_html_e('Read More', 'majed'); ?>
+            <?php esc_html_e('Read More', 'vexa'); ?>
         </a>
     </div>
 </div>
@@ -267,7 +267,7 @@
             <?php the_excerpt(); ?>
         </div>
         <a href="<?php the_permalink(); ?>" class="read_more">
-            <?php esc_html_e('Read More', 'majed'); ?>
+            <?php esc_html_e('Read More', 'vexa'); ?>
         </a>
     </div>
 </div>

@@ -14,8 +14,8 @@
             <div class="row">
                 <div class="col-lg-9">
                     <ul class="contact">
-                        <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="fa fa-envelope-open-o"></i> <span><?php esc_attr_e( 'Email Address :', 'majed' ) ?></span> <?php echo esc_html($vexatheme_option['email']); ?></a></li>
-                        <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="fa fa-map-marker"></i> <span><?php esc_attr_e( 'Office Address :', 'majed' ) ?></span> <?php echo esc_html($vexatheme_option['location']); ?></a></li>
+                        <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="fa fa-envelope-open-o"></i> <span><?php esc_attr_e( 'Email Address :', 'vexa' ) ?></span> <?php echo esc_html($vexatheme_option['email']); ?></a></li>
+                        <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="fa fa-map-marker"></i> <span><?php esc_attr_e( 'Office Address :', 'vexa' ) ?></span> <?php echo esc_html($vexatheme_option['location']); ?></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
@@ -43,7 +43,7 @@
             </ul>
             <div class="call_us">
                 <div class="icon-phone"></div>
-                <h3><?php esc_attr_e( 'Have any Questions?', 'majed' ) ?></h3>
+                <h3><?php esc_attr_e( 'Have any Questions?', 'vexa' ) ?></h3>
                 <h3 class="nub"><a href="<?php echo esc_url( ($vexatheme_option['telphone']) ); ?>"><?php echo esc_html($vexatheme_option['telphone']); ?></a></h3>
             </div>
             <!-- Primary menu -->

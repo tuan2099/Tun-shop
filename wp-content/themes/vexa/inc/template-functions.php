@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package majed
+ * @package vexa
  */
 
 
@@ -71,8 +71,8 @@ add_filter( 'excerpt_length', 'vexatheme_custom_excerpt_length', 999 );
 /*-----------------------------------------------------------------------------------*/
 function vexatheme_fonts_url() {
 	$fonts_url = '';
-	$muli = _x( 'on', 'Fira: on or off', 'majed' );
-    $poppins = _x( 'on', 'Poppins: on or off', 'majed' );
+	$muli = _x( 'on', 'Fira: on or off', 'vexa' );
+    $poppins = _x( 'on', 'Poppins: on or off', 'vexa' );
 
 	if ( 'off' !== $muli || 'off' !== $poppins ) {
 		$font_families = array();
@@ -153,10 +153,10 @@ function vexatheme_footer() {
  		$first_time = 1;
  		foreach((get_the_category()) as $category) {
  			if ($first_time == 1) {
- 				echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . sprintf( esc_attr__( "View all posts in %s", 'majed' ), $category->name ) . '" ' . '>'  . $category->name.'</a>';
+ 				echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . sprintf( esc_attr__( "View all posts in %s", 'vexa' ), $category->name ) . '" ' . '>'  . $category->name.'</a>';
  				$first_time = 0;
  			} else {
- 				echo esc_html($separator). '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . sprintf( esc_attr__( "View all posts in %s", 'majed' ), $category->name ) . '" ' . '>' . $category->name.'</a>';
+ 				echo esc_html($separator). '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . sprintf( esc_attr__( "View all posts in %s", 'vexa' ), $category->name ) . '" ' . '>' . $category->name.'</a>';
  			}
  		}
 
@@ -172,18 +172,18 @@ function vexatheme_category_fields($tag) {
     ?>
 <div class="form-table">
     <div class="form-field">
-        <div scope="row" valign="top"><label for="Cat_meta[layout]"><?php esc_html_e('Category Layout', 'majed'); ?></label></div>
+        <div scope="row" valign="top"><label for="Cat_meta[layout]"><?php esc_html_e('Category Layout', 'vexa'); ?></label></div>
         <div>
             <select name="Cat_meta[layout]" id="Cat_meta[layout]">
-                <option value="standard_layout" <?php echo (esc_html($cat_meta['layout']) == "standard_layout") ? 'selected="selected"': ''; ?>><?php esc_html_e('Standard Layout (Right Sidebar)', 'majed'); ?></option>
+                <option value="standard_layout" <?php echo (esc_html($cat_meta['layout']) == "standard_layout") ? 'selected="selected"': ''; ?>><?php esc_html_e('Standard Layout (Right Sidebar)', 'vexa'); ?></option>
 
-                <option value="left_sidebar" <?php echo (esc_html($cat_meta['layout']) == "left_sidebar") ? 'selected="selected"': ''; ?>><?php esc_html_e('Left Sidebar', 'majed'); ?></option>
+                <option value="left_sidebar" <?php echo (esc_html($cat_meta['layout']) == "left_sidebar") ? 'selected="selected"': ''; ?>><?php esc_html_e('Left Sidebar', 'vexa'); ?></option>
 
-                <option value="no_sidebar" <?php echo (esc_html($cat_meta['layout']) == "no_sidebar") ? 'selected="selected"': ''; ?>><?php esc_html_e('No Sidebar', 'majed'); ?></option>
+                <option value="no_sidebar" <?php echo (esc_html($cat_meta['layout']) == "no_sidebar") ? 'selected="selected"': ''; ?>><?php esc_html_e('No Sidebar', 'vexa'); ?></option>
 
             </select>
             <p class="description">
-                <?php esc_html_e( 'Select Category Layout', 'majed' ); ?>
+                <?php esc_html_e( 'Select Category Layout', 'vexa' ); ?>
             </p>
         </div>
     </div>

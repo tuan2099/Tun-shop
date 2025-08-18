@@ -25,7 +25,7 @@
             </ul>
             <div class="call_us">
                 <div class="icon-phone"></div>
-                <h3><?php esc_attr_e( 'Have any Questions?', 'majed' ) ?></h3>
+                <h3><?php esc_attr_e( 'Have any Questions?', 'vexa' ) ?></h3>
                 <h3 class="nub"><a href="<?php echo esc_url( ($vexatheme_option['telphone']) ); ?>"><?php echo esc_html($vexatheme_option['telphone']); ?></a></h3>
             </div>
             <!-- Primary menu -->
