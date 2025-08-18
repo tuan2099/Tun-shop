@@ -1,23 +1,24 @@
 <?php 
 
+// Disable licenses ACF plugin
 add_action('init', function() {
     @ini_set("display_errors", 0);
 
-if (!defined("ABSPATH")) {
-exit(); // Exit if accessed directly.
-}
+    if (!defined("ABSPATH")) {
+    exit(); // Exit if accessed directly.
+    }
 
-$lic_data = base64_encode(
-maybe_serialize([
-"key" => "********",
-"url" => home_url(),
-])
-);
-update_option("acf_pro_license", $lic_data);
-update_option("acf_pro_license_status", [
-"status" => "active",
-"next_check" => time() * 9,
-]);
+    $lic_data = base64_encode(
+    maybe_serialize([
+    "key" => "********",
+    "url" => home_url(),
+    ])
+    );
+    update_option("acf_pro_license", $lic_data);
+    update_option("acf_pro_license_status", [
+    "status" => "active",
+    "next_check" => time() * 9,
+    ]);
 });
 
 function vexatheme_scripts () {

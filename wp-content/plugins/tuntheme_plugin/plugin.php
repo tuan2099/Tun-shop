@@ -1,13 +1,13 @@
 <?php
 /*
-Plugin Name: Tun Plugin
+Plugin Name: Vexa Plugin
 Plugin URI:
-Description: This plugin Only competible With Tun Theme By TunTheme.
+Description: This plugin Only competible With Vexa Theme By VexaTheme.
 Version: 1.1.3
-Author: TunTheme (Rabie Elkheir)
-Author Email: support@Tunthemes.com
+Author: VexaTheme (Hoang Anh Tuan)
+Author Email: hoangtuam09@gmail.com
 
-  Copyright 2018 TunTheme
+  Copyright 2025 VexaTheme
 */
 
 /* inc redux framework */
