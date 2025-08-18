@@ -84,12 +84,3 @@
 
 
 
-
-<!-- ====================  Sidebar ======================= -->
-<div class="close-vexa-sidebar"></div>
-<div id="vexa-sidebar" class="vexa-sidebar widget-area vexa-widget-area">
-    <?php dynamic_sidebar( 'sidebar-2' ); ?>
-</div>
-<!-- ====================  End Sidebar ======================= -->
-
-
