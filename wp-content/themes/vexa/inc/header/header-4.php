@@ -1,8 +1,8 @@
 <?php 
-    global $niletheme_option , $niletheme_meta ; 
+    global $vexatheme_option , $vexatheme_meta ; 
 ?>
 
 
 <!-- Back to top button -->
-<a id="nile-go-top"></a>
+<a id="vexa-go-top"></a>
 <!-- // Back to top button -->

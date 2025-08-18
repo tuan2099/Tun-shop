@@ -3,7 +3,7 @@
 ?>
 
 <!-- Back to top button -->
-<a id="nile-go-top"></a>
+<a id="vexa-go-top"></a>
 <!-- // Back to top button -->
 
 <!-- ==================== Header ======================= -->

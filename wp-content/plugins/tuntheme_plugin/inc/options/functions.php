@@ -2,9 +2,9 @@
 
 $theme = wp_get_theme(); // gets the current theme
 
-if ( ! class_exists( 'niletheme_theme_option_config' ) ) {
+if ( ! class_exists( 'vexatheme_theme_option_config' ) ) {
 
-    class niletheme_theme_option_config {
+    class vexatheme_theme_option_config {
 
         public $args = array();
         public $sections = array();
@@ -54,18 +54,18 @@ if ( ! class_exists( 'niletheme_theme_option_config' ) ) {
             // Custom page help tabs, displayed using the help API. Tabs are shown in order of definition.
             $this->args['help_tabs'][] = array(
                 'id'      => 'redux-help-tab-1',
-                'title'   => esc_html__( 'Theme Information 1', 'niletheme' ),
-                'content' => esc_html__( '<p>This is the tab content, HTML is allowed.</p>', 'niletheme' )
+                'title'   => esc_html__( 'Theme Information 1', 'vexa' ),
+                'content' => esc_html__( '<p>This is the tab content, HTML is allowed.</p>', 'vexa' )
             );
 
             $this->args['help_tabs'][] = array(
                 'id'      => 'redux-help-tab-2',
-                'title'   => esc_html__( 'Theme Information 2', 'niletheme' ),
-                'content' => esc_html__( '<p>This is the tab content, HTML is allowed.</p>', 'niletheme' )
+                'title'   => esc_html__( 'Theme Information 2', 'vexa' ),
+                'content' => esc_html__( '<p>This is the tab content, HTML is allowed.</p>', 'vexa' )
             );
 
             // Set the help sidebar
-            $this->args['help_sidebar'] = esc_html__( '<p>This is the sidebar content, HTML is allowed.</p>', 'niletheme' );
+            $this->args['help_sidebar'] = esc_html__( '<p>This is the sidebar content, HTML is allowed.</p>', 'vexa' );
         }
 
         /**
@@ -78,9 +78,9 @@ if ( ! class_exists( 'niletheme_theme_option_config' ) ) {
 
             $this->args = array(
                 // TYPICAL -> Change these values as you need/desire
-                'opt_name'           => 'niletheme_option',
+                'opt_name'           => 'vexatheme_option',
                 // This is where your data is stored in the database and also becomes your global variable name.
-                'display_name'       => esc_html__('Theme Options', 'niletheme'),
+                'display_name'       => esc_html__('Theme Options', 'vexa'),
                 // Name that appears at the top of your panel
                 'display_version'    => 'V'.$theme->get( 'Version' ),
                 // Version that appears at the top of your panel
@@ -88,8 +88,8 @@ if ( ! class_exists( 'niletheme_theme_option_config' ) ) {
                 //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
                 'allow_sub_menu'     => true,
                 // Show the sections below the admin menu item or not
-                'menu_title'         => esc_html__('Theme Options', 'niletheme'),
-                'page_title'         => esc_html__('Theme Options', 'niletheme'),
+                'menu_title'         => esc_html__('Theme Options', 'vexa'),
+                'page_title'         => esc_html__('Theme Options', 'vexa'),
                 // You will need to generate a Google API key to use this feature.
                 // Please visit: https://developers.google.com/fonts/docs/developer_api#Auth
                 'google_api_key'     => '',
@@ -194,5 +194,5 @@ if ( ! class_exists( 'niletheme_theme_option_config' ) ) {
     }
 
     global $reduxConfig;
-    $reduxConfig = new niletheme_theme_option_config();
+    $reduxConfig = new vexatheme_theme_option_config();
 }

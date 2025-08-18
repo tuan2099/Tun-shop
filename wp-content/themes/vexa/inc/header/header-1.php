@@ -1,10 +1,10 @@
 <?php 
-    global $niletheme_option , $niletheme_meta ; 
+    global $vexatheme_option , $vexatheme_meta ; 
 ?>
 
 
 <!-- Back to top button -->
-<a id="nile-go-top"></a>
+<a id="vexa-go-top"></a>
 <!-- // Back to top button -->
 
 <!-- ==================== Header ======================= -->
@@ -14,13 +14,13 @@
             <div class="row">
                 <div class="col-lg-9">
                     <ul class="contact">
-                        <li><a href="<?php echo esc_url( ($niletheme_option['email']) ); ?>"><i class="fa fa-envelope-open-o"></i> <span><?php esc_attr_e( 'Email Address :', 'majed' ) ?></span> <?php echo esc_html($niletheme_option['email']); ?></a></li>
-                        <li><a href="<?php echo esc_url( ($niletheme_option['location_url']) ); ?>"><i class="fa fa-map-marker"></i> <span><?php esc_attr_e( 'Office Address :', 'majed' ) ?></span> <?php echo esc_html($niletheme_option['location']); ?></a></li>
+                        <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="fa fa-envelope-open-o"></i> <span><?php esc_attr_e( 'Email Address :', 'majed' ) ?></span> <?php echo esc_html($vexatheme_option['email']); ?></a></li>
+                        <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="fa fa-map-marker"></i> <span><?php esc_attr_e( 'Office Address :', 'majed' ) ?></span> <?php echo esc_html($vexatheme_option['location']); ?></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <ul class="social">
-                        <?php niletheme_social_links(); ?>
+                        <?php vexatheme_social_links(); ?>
                     </ul>
                 </div>
             </div>
@@ -30,7 +30,7 @@
 
     <div class="header-body">
         <div class="container">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"> <img src="<?php if(is_page() && !empty($niletheme_meta['custom_header'])){ echo esc_url($niletheme_meta['main_logo']['url']); } else{ echo esc_url($niletheme_option['main_logo']['url']); }?>" alt="<?php echo esc_attr(get_bloginfo ('name')); ?>"> </a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"> <img src="<?php if(is_page() && !empty($vexatheme_meta['custom_header'])){ echo esc_url($vexatheme_meta['main_logo']['url']); } else{ echo esc_url($vexatheme_option['main_logo']['url']); }?>" alt="<?php echo esc_attr(get_bloginfo ('name')); ?>"> </a>
             <ul class="tools">
                 <li class="search-btn"><a><i class="fa fa-search"></i></a>
                     <div class="search-box">
@@ -44,7 +44,7 @@
             <div class="call_us">
                 <div class="icon-phone"></div>
                 <h3><?php esc_attr_e( 'Have any Questions?', 'majed' ) ?></h3>
-                <h3 class="nub"><a href="<?php echo esc_url( ($niletheme_option['telphone']) ); ?>"><?php echo esc_html($niletheme_option['telphone']); ?></a></h3>
+                <h3 class="nub"><a href="<?php echo esc_url( ($vexatheme_option['telphone']) ); ?>"><?php echo esc_html($vexatheme_option['telphone']); ?></a></h3>
             </div>
             <!-- Primary menu -->
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id'  => 'menu-main', 'menu_class' => 'nav-menu' , 'container' => false, 'fallback_cb'=> false ) ); ?>
@@ -62,9 +62,9 @@
 
 
 <!-- ====================  Mobile Menu ======================= -->
-<div class="close-nile-header-menu"></div>
-<div id="nile-header-menu" class="nile-header-menu">
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"> <img src="<?php if(is_page() && !empty($niletheme_meta['custom_header'])){ echo esc_url($niletheme_meta['main_logo']['url']); } else{ echo esc_url($niletheme_option['main_logo']['url']); }?>" alt="<?php echo esc_attr(get_bloginfo ('name')); ?>"> </a>
+<div class="close-vexa-header-menu"></div>
+<div id="vexa-header-menu" class="vexa-header-menu">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"> <img src="<?php if(is_page() && !empty($vexatheme_meta['custom_header'])){ echo esc_url($vexatheme_meta['main_logo']['url']); } else{ echo esc_url($vexatheme_option['main_logo']['url']); }?>" alt="<?php echo esc_attr(get_bloginfo ('name')); ?>"> </a>
 
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id'  => 'menu-main-mobile', 'menu_class' => 'nav-menu-mobile' , 'container' => false, 'fallback_cb'=> false ) ); ?>
 

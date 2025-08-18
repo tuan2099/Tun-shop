@@ -1,5 +1,5 @@
 <?php 
-    global $niletheme_option;
+    global $vexatheme_option;
     $preloader_img = get_template_directory_uri().'/assets/img/loading-1.svg' ;
 
 ?>
@@ -83,10 +83,10 @@
             <div class="py-7 border-t border-gray-200">
                 <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
                     <div class="text-copy text-sm text-gray-600">
-                        <?php echo wp_kses_post($niletheme_option['_copyright']); ?>
+                        <?php echo wp_kses_post($vexatheme_option['_copyright']); ?>
                     </div>
                     <div class="social flex mt-4 space-x-4 sm:justify-center lg:mt-0 list-none">
-                        <?php niletheme_social_links(); ?>
+                        <?php vexatheme_social_links(); ?>
                     </div>
                 </div>
             </div>

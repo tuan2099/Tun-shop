@@ -35,14 +35,14 @@ $this->sections[] = array(
 		array(
             'title' => esc_html__('Enable Header Tool Bar', 'majed'),
             'subtitle' => esc_html__('Header Tool Bar : Telphone, Email, location & Social Media Links', 'majed'),
-            'id' => 'niletheme-toolbar',
+            'id' => 'vexatheme-toolbar',
             'type' => 'switch',
             'default' => false,
         ),
 
 		array(
             'subtitle' => esc_html__('Search Button', 'majed'),
-            'id' => 'niletheme-search-button',
+            'id' => 'vexatheme-search-button',
             'type' => 'switch',
             'title' => esc_html__('Enable Search Button', 'majed'),
             'default' => false,
@@ -50,7 +50,7 @@ $this->sections[] = array(
 
 		array(
             'subtitle' => esc_html__('Hidden Sidebar', 'majed'),
-            'id' => 'niletheme-sidebare-button',
+            'id' => 'vexatheme-sidebare-button',
             'type' => 'switch',
             'title' => esc_html__('Enable Hidden Sidebar Button', 'majed'),
             'default' => false,
@@ -58,7 +58,7 @@ $this->sections[] = array(
 
 		array(
             'subtitle' => esc_html__('Cart Button', 'majed'),
-            'id' => 'niletheme-cart-button',
+            'id' => 'vexatheme-cart-button',
             'type' => 'switch',
             'title' => esc_html__('Enable Cart Button', 'majed'),
             'default' => false,
@@ -66,7 +66,7 @@ $this->sections[] = array(
 
 		array(
             'subtitle' => esc_html__('Enable Quote Link', 'majed'),
-            'id' => 'niletheme-header-quoteLink',
+            'id' => 'vexatheme-header-quoteLink',
             'type' => 'switch',
             'title' => esc_html__('Enable Get A Quote Link', 'majed'),
             'default' => false,
@@ -75,7 +75,7 @@ $this->sections[] = array(
 
 		array(
             'subtitle' => esc_html__('Enable Phone Number', 'majed'),
-            'id' => 'niletheme-header-telphone',
+            'id' => 'vexatheme-header-telphone',
             'type' => 'switch',
             'title' => esc_html__('Enable Phone Number', 'majed'),
             'default' => false,
@@ -107,14 +107,14 @@ $this->sections[] = array(
         
 		array(
             'subtitle' => esc_html__('Preloader Options', 'majed'),
-            'id' => 'niletheme_preloader',
+            'id' => 'vexatheme_preloader',
             'type' => 'switch',
             'title' => esc_html__('Enable Preloader', 'majed'),
             'default' => false,
         ),
 		array(
             'subtitle' => esc_html__('Scroll To Top', 'majed'),
-            'id' => 'niletheme_scroll_top',
+            'id' => 'vexatheme_scroll_top',
             'type' => 'switch',
             'title' => esc_html__('Enable Scroll To Top', 'majed'),
             'default' => false,
@@ -202,39 +202,39 @@ $this->sections[] = array(
         
 		array(
             'subtitle' => esc_html__('PDF Brochure', 'majed'),
-            'id' => 'niletheme_PDF_Brochure',
+            'id' => 'vexatheme_PDF_Brochure',
             'type' => 'switch',
             'title' => esc_html__('Enable PDF Brochure', 'majed'),
             'default' => false,
         ),
         array(
             'title' => esc_html__('PDF Brochure', 'majed'),
-            'id' => 'niletheme_PDF_url',
+            'id' => 'vexatheme_PDF_url',
             'type' => 'media',
             'url' => false,
-            'required' => array( 'niletheme_PDF_Brochure', '=', '1' )
+            'required' => array( 'vexatheme_PDF_Brochure', '=', '1' )
         ),
         
 
         
 		array(
             'subtitle' => esc_html__('Word Brochure', 'majed'),
-            'id' => 'niletheme_Word_Brochure',
+            'id' => 'vexatheme_Word_Brochure',
             'type' => 'switch',
             'title' => esc_html__('Enable Word Brochure', 'majed'),
             'default' => false,
         ),
         array(
             'title' => esc_html__('Word Brochure', 'majed'),
-            'id' => 'niletheme_Word_url',
+            'id' => 'vexatheme_Word_url',
             'type' => 'media',
             'url' => false,
-            'required' => array( 'niletheme_Word_Brochure', '=', '1' )
+            'required' => array( 'vexatheme_Word_Brochure', '=', '1' )
         ),
         
 		array(
             'subtitle' => esc_html__('Contact Us', 'majed'),
-            'id' => 'niletheme_servise_contact',
+            'id' => 'vexatheme_servise_contact',
             'type' => 'switch',
             'title' => esc_html__('Enable Contact Us Block', 'majed'),
             'default' => false,
@@ -304,7 +304,7 @@ $this->sections[] = array(
             'type' => 'textarea',
             'title' => esc_html__('Copyright', 'majed'),
             'validate' => 'html_custom',
-            'default' => '© 2020 niletheme. All Rights Reserved With Love by <a href="#">Nile Theme</a>',
+            'default' => '© 2020 vexatheme. All Rights Reserved With Love by <a href="#">vexa Theme</a>',
             'allowed_html' => array(
                 'a' => array(
                     'href' => array(),
@@ -330,7 +330,7 @@ $this->sections[] = array(
         ),
 		array(
             'subtitle' => esc_html__('Enable Widgets Area', 'majed'),
-            'id' => 'niletheme-footer-widget',
+            'id' => 'vexatheme-footer-widget',
             'type' => 'switch',
             'title' => esc_html__('Enable Widget Area in Footer ', 'majed'),
             'default' => false,
@@ -415,7 +415,7 @@ $this->sections[] = array(
         ),
 		
         array(
-            'id'      => 'niletheme_top_social',
+            'id'      => 'vexatheme_top_social',
             'type'    => 'sorter',
             'title'   => 'Social',
             'desc'    => 'Choose which social networks are displayed and edit where they link to.',

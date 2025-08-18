@@ -4,9 +4,9 @@
 function custom_post_type() {
 
 		$labels = array(
-			'name'                  => __( 'Portfolio', 'tuntheme' ),
-			'singular_name'         => __( 'Portfolios', 'tuntheme' ),
-			'menu_name'             => __( 'Portfolio', 'tuntheme' ),
+			'name'                  => __( 'Portfolio', 'vexa' ),
+			'singular_name'         => __( 'Portfolios', 'vexa' ),
+			'menu_name'             => __( 'Portfolio', 'vexa' ),
 		);
 		$rewrite = array(
 			'slug'                => 'portfolio',
@@ -172,7 +172,7 @@ add_action( 'init', 'custom_post_type', 0 );
 function custom_taxonomy() {
 
 		$labels = array(
-			'menu_name'              => __( 'Portfolio Category', 'tuntheme' ),
+			'menu_name'              => __( 'Portfolio Category', 'vexa' ),
 		);
 		$rewrite = array(
 			'slug'                       => 'portfolio_cat',

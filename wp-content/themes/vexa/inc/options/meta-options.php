@@ -12,7 +12,7 @@ $args = array(
 
 	// TYPICAL -> Change these values as you need/desire
 
-	'opt_name' => apply_filters('opt_meta', 'niletheme_meta') ,
+	'opt_name' => apply_filters('opt_meta', 'vexatheme_meta') ,
 
 	// Set a different name for your global variable other than the opt_name
 
@@ -67,10 +67,10 @@ $args = array(
 // -> Set Option To Panel.
 
 MetaFramework::setArgs($args);
-add_action('admin_init', 'niletheme_meta_boxs');
+add_action('admin_init', 'vexatheme_meta_boxs');
 MetaFramework::init();
 
-function niletheme_meta_boxs()
+function vexatheme_meta_boxs()
 	{
 	/** page options */
 	MetaFramework::setMetabox(array(

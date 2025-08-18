@@ -23,38 +23,38 @@ function tuntheme_share_post_2() {?>
 }
 
 // Add basic widget
-function niletheme_footer_widgets() {
+function vexa_footer_widgets() {
   register_sidebar( array(
-    'name'          => esc_html__( 'Footer widgets One', 'niletheme' ),
+    'name'          => esc_html__( 'Footer widgets One', 'vexa' ),
     'id'            => 'footer-1',
-    'description'   => esc_html__( 'Add widgets here.', 'niletheme' ),
+    'description'   => esc_html__( 'Add widgets here.', 'vexa' ),
     'before_widget' => '<div  id="%1$s"  class="block-footer layout-1 %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="block-title"><span>',
     'after_title'   => '</span></h3>',
   ) );
   register_sidebar( array(
-    'name'          => esc_html__( 'Footer widgets Two', 'niletheme' ),
+    'name'          => esc_html__( 'Footer widgets Two', 'vexa' ),
     'id'            => 'footer-2',
-    'description'   => esc_html__( 'Add widgets here.', 'niletheme' ),
+    'description'   => esc_html__( 'Add widgets here.', 'vexa' ),
     'before_widget' => '<div  id="%1$s"  class="block-footer layout-1 %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="block-title"><span>',
     'after_title'   => '</span></h3>',
   ) );
   register_sidebar( array(
-    'name'          => esc_html__( 'Footer widgets Three', 'niletheme' ),
+    'name'          => esc_html__( 'Footer widgets Three', 'vexa' ),
     'id'            => 'footer-3',
-    'description'   => esc_html__( 'Add widgets here.', 'niletheme' ),
+    'description'   => esc_html__( 'Add widgets here.', 'vexa' ),
     'before_widget' => '<div  id="%1$s"  class="block-footer layout-1 %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="block-title"><span>',
     'after_title'   => '</span></h3>',
   ) );
   register_sidebar( array(
-    'name'          => esc_html__( 'Footer widgets Four', 'niletheme' ),
+    'name'          => esc_html__( 'Footer widgets Four', 'vexa' ),
     'id'            => 'footer-4',
-    'description'   => esc_html__( 'Add widgets here.', 'niletheme' ),
+    'description'   => esc_html__( 'Add widgets here.', 'vexa' ),
     'before_widget' => '<div  id="%1$s"  class="block-footer layout-1 %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="block-title"><span>',

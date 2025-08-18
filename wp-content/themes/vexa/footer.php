@@ -12,7 +12,7 @@
 ?>
     <div class="clearfix"></div>
     <div class="text-3xl"></div>
-    <?php niletheme_footer();?>
+    <?php vexatheme_footer();?>
     <?php wp_footer(); ?>
     </body>
 

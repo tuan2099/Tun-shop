@@ -1,15 +1,15 @@
 <?php 
-    global $niletheme_option;
+    global $vexatheme_option;
     $preloader_img = get_template_directory_uri().'/assets/img/loading-1.svg' ;
 
 ?>
 
-<?php if($niletheme_option['action_footer'] == '1') { ?>
+<?php if($vexatheme_option['action_footer'] == '1') { ?>
 <div class="footer-action">
     <div class="container">
-        <div class="icon"><img src="<?php echo esc_url($niletheme_option['action_icon']['url']); ?>"></div>
-        <h2><?php echo esc_html( ($niletheme_option['action_text']) ); ?></h2>
-        <a href="<?php echo esc_url( ($niletheme_option['action_link']) ); ?>" class="more"><?php echo esc_html( ($niletheme_option['action_text_link']) ); ?></a>
+        <div class="icon"><img src="<?php echo esc_url($vexatheme_option['action_icon']['url']); ?>"></div>
+        <h2><?php echo esc_html( ($vexatheme_option['action_text']) ); ?></h2>
+        <a href="<?php echo esc_url( ($vexatheme_option['action_link']) ); ?>" class="more"><?php echo esc_html( ($vexatheme_option['action_text_link']) ); ?></a>
         <div class="clearfix"></div>
 
     </div>
@@ -20,16 +20,16 @@
 
         <div class="contact-info">
             <ul class="contact-list">
-                <li><a href="<?php echo esc_url( ($niletheme_option['email']) ); ?>"><i class="glyph-icon flaticon-interface"></i> <?php echo esc_html($niletheme_option['email']); ?><span><?php esc_html_e( 'Email Address ', 'majed' ) ?></span></a>
+                <li><a href="<?php echo esc_url( ($vexatheme_option['email']) ); ?>"><i class="glyph-icon flaticon-interface"></i> <?php echo esc_html($vexatheme_option['email']); ?><span><?php esc_html_e( 'Email Address ', 'majed' ) ?></span></a>
                     <div class="clearfix"></div>
                 </li>
-                <li><a href="<?php echo esc_url( ($niletheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-maps-and-flags"></i> <?php echo esc_html($niletheme_option['location']); ?><span><?php esc_html_e( 'Office Address', 'majed' ) ?></span> </a>
+                <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-maps-and-flags"></i> <?php echo esc_html($vexatheme_option['location']); ?><span><?php esc_html_e( 'Office Address', 'majed' ) ?></span> </a>
                     <div class="clearfix"></div>
                 </li>
-                <li><a href="<?php echo esc_url( ($niletheme_option['telphone']) ); ?>"><i class="glyph-icon flaticon-communications"></i> <?php echo esc_html($niletheme_option['telphone']); ?><span><?php esc_html_e( 'Call us free', 'majed' ) ?></span> </a>
+                <li><a href="<?php echo esc_url( ($vexatheme_option['telphone']) ); ?>"><i class="glyph-icon flaticon-communications"></i> <?php echo esc_html($vexatheme_option['telphone']); ?><span><?php esc_html_e( 'Call us free', 'majed' ) ?></span> </a>
                     <div class="clearfix"></div>
                 </li>
-                <li><a href="<?php echo esc_url( ($niletheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-time"></i> <?php echo esc_html($niletheme_option['work_time']); ?><span><?php esc_html_e( 'Work Hours', 'majed' ) ?></span> </a>
+                <li><a href="<?php echo esc_url( ($vexatheme_option['location_url']) ); ?>"><i class="glyph-icon flaticon-time"></i> <?php echo esc_html($vexatheme_option['work_time']); ?><span><?php esc_html_e( 'Work Hours', 'majed' ) ?></span> </a>
                     <div class="clearfix"></div>
                 </li>
             </ul>
@@ -65,12 +65,12 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                 
                 <div class="text-copy text-sm text-gray-600">
-                    <?php echo wp_kses_post($niletheme_option['_copyright']); ?>
+                    <?php echo wp_kses_post($vexatheme_option['_copyright']); ?>
                 </div>
                 
                 <div>
                     <ul class="social flex justify-start md:justify-end space-x-4">
-                        <?php niletheme_social_links(); ?>
+                        <?php vexatheme_social_links(); ?>
                     </ul>
                 </div>
 
@@ -86,8 +86,8 @@
 
 
 <!-- ====================  Sidebar ======================= -->
-<div class="close-nile-sidebar"></div>
-<div id="nile-sidebar" class="nile-sidebar widget-area nile-widget-area">
+<div class="close-vexa-sidebar"></div>
+<div id="vexa-sidebar" class="vexa-sidebar widget-area vexa-widget-area">
     <?php dynamic_sidebar( 'sidebar-2' ); ?>
 </div>
 <!-- ====================  End Sidebar ======================= -->

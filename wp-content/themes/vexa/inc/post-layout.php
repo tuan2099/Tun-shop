@@ -3,17 +3,17 @@
 	/*-----------------------------------------------------------------------------------*/
 	#  List Layout
 	/*-----------------------------------------------------------------------------------*/
- 	function niletheme_list_layout() {
+ 	function vexatheme_list_layout() {
  		?>
 
 
 
 <!-- Blog item -->
-<div id="post-<?php the_ID(); ?>" class="nile-blog-entry layout-2 margin-bottom-35px clearfix">
+<div id="post-<?php the_ID(); ?>" class="vexa-blog-entry layout-2 margin-bottom-35px clearfix">
     <?php if ( has_post_thumbnail() ) { ?>
     <div class="img-in">
-        <?php the_post_thumbnail('niletheme_500x500'); ?>
-        <?php if(function_exists('niletheme_share_post')) { niletheme_share_post_2(); } ?>
+        <?php the_post_thumbnail('vexatheme_500x500'); ?>
+        <?php if(function_exists('vexatheme_share_post')) { vexatheme_share_post_2(); } ?>
     </div>
     <?php } ?>
     <div class="post-info">
@@ -43,15 +43,15 @@
 	/*-----------------------------------------------------------------------------------*/
 	#   Post Grid
 	/*-----------------------------------------------------------------------------------*/
- 	function niletheme_grid_layout() {
+ 	function vexatheme_grid_layout() {
  		?>
 <!-- Post item -->
 <div id="post-<?php the_ID(); ?>" class="col-lg-6 col-md-6">
-    <div class="nile-blog-entry layout-1 margin-bottom-35px">
+    <div class="vexa-blog-entry layout-1 margin-bottom-35px">
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="img-in">
-            <?php the_post_thumbnail('niletheme_500x300'); ?>
-            <?php if(function_exists('niletheme_share_post')) { niletheme_share_post_2(); } ?>
+            <?php the_post_thumbnail('vexatheme_500x300'); ?>
+            <?php if(function_exists('vexatheme_share_post')) { vexatheme_share_post_2(); } ?>
         </div>
         <?php } ?>
         <div class="out">
@@ -82,14 +82,14 @@
 	/*-----------------------------------------------------------------------------------*/
 	#   Post Grid 3 Colm
 	/*-----------------------------------------------------------------------------------*/
- 	function niletheme_grid_3col_layout() {
+ 	function vexatheme_grid_3col_layout() {
  		?>
 <div id="post-<?php the_ID(); ?>" class="post col-lg-4">
     <div class="post-grid">
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="thum">
             <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail('niletheme_500x400'); ?>
+                <?php the_post_thumbnail('vexatheme_500x400'); ?>
             </a>
             <?php if(is_sticky()) : ?>
             <div class="icon"><span class="icon_documents_alt"></span></div>
@@ -106,7 +106,7 @@
         <?php } ?>
         <div class="post-info">
             <div class="cats">
-                <?php niletheme_post_category(' '); ?>
+                <?php vexatheme_post_category(' '); ?>
             </div>
             <a class="title" href="<?php the_permalink(); ?>">
                 <?php the_title(); ?>
@@ -129,14 +129,14 @@
 	/*-----------------------------------------------------------------------------------*/
 	#   Post Grid 3 Colm Style (2)
 	/*-----------------------------------------------------------------------------------*/
- 	function niletheme_grid_3col_layout_2() {
+ 	function vexatheme_grid_3col_layout_2() {
  		?>
 <div id="post-<?php the_ID(); ?>" class="post col-lg-4">
     <div class="post-grid layout-2">
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="thum">
             <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail('niletheme_600x480'); ?>
+                <?php the_post_thumbnail('vexatheme_600x480'); ?>
             </a>
             <?php if(is_sticky()) : ?>
             <div class="icon-in"><span class="icon_documents_alt"></span></div>
@@ -153,7 +153,7 @@
         <?php } ?>
         <div class="post-info text-left">
             <div class="cats">
-                <?php niletheme_post_category(' '); ?>
+                <?php vexatheme_post_category(' '); ?>
             </div>
             <a class="title" href="<?php the_permalink(); ?>">
                 <?php the_title(); ?>
@@ -178,8 +178,8 @@
     /*-----------------------------------------------------------------------------------*/
     #   Post Standard
     /*-----------------------------------------------------------------------------------*/
-	function niletheme_standard_layout() {
-	global $niletheme_meta;
+	function vexatheme_standard_layout() {
+	global $vexatheme_meta;
 		if ( is_sticky() ) { $stickyClass="sticky-post"; } 
 		else {
 			 $stickyClass=" ";
@@ -187,11 +187,11 @@
 
 	?>
 <!-- Blog item -->
-<div id="post-<?php the_ID(); ?>" class="nile-blog-entry layout-3 margin-bottom-50px <?php echo esc_html($stickyClass) ?>">
+<div id="post-<?php the_ID(); ?>" class="vexa-blog-entry layout-3 margin-bottom-50px <?php echo esc_html($stickyClass) ?>">
     <?php if ( has_post_thumbnail() ) { ?>
     <div class="img-in">
         <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail('niletheme_1000x480'); ?>
+            <?php the_post_thumbnail('vexatheme_1000x480'); ?>
         </a>
     </div>
     <?php } ?>
@@ -213,7 +213,7 @@
                 <li>
                     <span class="cats-loop">
                         <i class="fa fa-folder-open-o"></i>
-                        <?php niletheme_post_category(', '); ?>
+                        <?php vexatheme_post_category(', '); ?>
                     </span>
                 </li>
             </ul>
@@ -243,8 +243,8 @@
 	/*-----------------------------------------------------------------------------------*/
 	#   Post Standard
 	/*-----------------------------------------------------------------------------------*/
- 	function niletheme_posts_search_layout() {
- 		global $niletheme_meta;
+ 	function vexatheme_posts_search_layout() {
+ 		global $vexatheme_meta;
 		if ( is_sticky() ) { $stickyClass="sticky-post"; } 
 		else {
 			 $stickyClass=" ";
@@ -252,10 +252,10 @@
 
 	?>
 <!-- Blog item -->
-<div id="post-<?php the_ID(); ?>" class="nile-blog-entry layout-3 margin-bottom-50px">
+<div id="post-<?php the_ID(); ?>" class="vexa-blog-entry layout-3 margin-bottom-50px">
     <?php if ( has_post_thumbnail() ) { ?>
     <div class="img-in">
-        <?php the_post_thumbnail('niletheme_1000x480'); ?>
+        <?php the_post_thumbnail('vexatheme_1000x480'); ?>
     </div>
     <?php } ?>
 
@@ -281,12 +281,12 @@
 	/*-----------------------------------------------------------------------------------*/
 	#   Post Grid 3 Colm Style (2)
 	/*-----------------------------------------------------------------------------------*/
- 	function niletheme_video_post() {
+ 	function vexatheme_video_post() {
  		?>
 <div id="post-<?php the_ID(); ?>" class="post col-lg-4">
     <div class="video-post-layout thum-hover">
         <div class="item-thumbnail ba-black">
-            <?php the_post_thumbnail('niletheme_600x480'); ?>
+            <?php the_post_thumbnail('vexatheme_600x480'); ?>
         </div>
         <div class="tfassel">
             <a href="<?php the_permalink(); ?>" class="title font-2">
@@ -302,12 +302,12 @@
 </div>
 <?php
  	}
- 	function niletheme_portfolio_layout_1() {
+ 	function vexatheme_portfolio_layout_1() {
  		 get_template_part( 'template-parts/portfolio/portfolio-archive', get_post_type() ); 
  	}
- 	function niletheme_prevention_layout_1() {
+ 	function vexatheme_prevention_layout_1() {
  		 get_template_part( 'template-parts/post-types/service/service-archive', get_post_type() ); 
  	}
- 	function niletheme_team_layout_1() {
+ 	function vexatheme_team_layout_1() {
  		 get_template_part( 'template-parts/post-types/team/team-archive', get_post_type() ); 
  	}
