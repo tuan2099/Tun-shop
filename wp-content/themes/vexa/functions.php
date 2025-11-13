@@ -28,6 +28,24 @@ function vexatheme_scripts () {
 }
 add_action('wp_enqueue_scripts', 'vexatheme_scripts');
 
+// Register All Menu
+function tuan_register_menus() {
+    register_nav_menus([
+        'footer_menu' => __('Footer Menu', 'vexa'),
+    ]);
+}
+add_action('after_setup_theme', 'tuan_register_menus');
+
+function tuan_footer_menu_link_classes( $atts, $item, $args ) {
+    if ( $args->theme_location === 'footer_menu' ) {
+        $existing_class = isset($atts['class']) ? $atts['class'] . ' ' : '';
+        $atts['class']  = $existing_class . 'text-gray-400 hover:text-lime-400 transition';
+    }
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'tuan_footer_menu_link_classes', 10, 3);
+
+
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
