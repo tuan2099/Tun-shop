@@ -230,40 +230,40 @@ function vexatheme_social_links() {
     if ($header_social): foreach ($header_social as $key=>$value) {
         switch($key) {
 
-            case 'facebook': echo '<li class="list-inline-item facebook"><a href="'.esc_url($vexatheme_option['social_facebook_url']).'"><i class="fa-brands fa-facebook"></i></a></li>';
+            case 'facebook': echo '<li class="list-inline-item facebook"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition" href="'.esc_url($vexatheme_option['social_facebook_url']).'"><i class="fa-brands fa-facebook"></i></a></li>';
             break;
 
-            case 'twitter': echo '<li class="list-inline-item twitter"><a  href="'.esc_url($vexatheme_option['social_twitter_url']).'"><i class="fa-brands fa-twitter"></i></a></li>';
+            case 'twitter': echo '<li class="list-inline-item twitter"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition"  href="'.esc_url($vexatheme_option['social_twitter_url']).'"><i class="fa-brands fa-twitter"></i></a></li>';
             break;
 
-            case 'google': echo '<li class="list-inline-item google"><a href="'.esc_url($vexatheme_option['social_google_url']).'"><i class="fa-brands fa-google"></i></a></li>';
+            case 'google': echo '<li class="list-inline-item google"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition" href="'.esc_url($vexatheme_option['social_google_url']).'"><i class="fa-brands fa-google"></i></a></li>';
             break;
 
-            case 'linkedin': echo '<li class="list-inline-item linkedin"><a href="'.esc_url($vexatheme_option['social_inkedin_url']).'"><i class="fa-brands fa-linkedin-in"></i></i></a></li>';
+            case 'linkedin': echo '<li class="list-inline-item linkedin"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition" href="'.esc_url($vexatheme_option['social_inkedin_url']).'"><i class="fa-brands fa-linkedin-in"></i></i></a></li>';
             break;
 
-            case 'rss': echo '<li class="list-inline-item"><a href="'.esc_url($vexatheme_option['social_rss_url']).'"><i class="fa-solid fa-rss"></i></a></li>';
+            case 'rss': echo '<li class="list-inline-item"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition" href="'.esc_url($vexatheme_option['social_rss_url']).'"><i class="fa-solid fa-rss"></i></a></li>';
             break;
 
-            case 'instagram': echo '<li class="list-inline-item instagram"><a href="'.esc_url($vexatheme_option['social_instagram_url']).'"><i class="fa-brands fa-instagram"></i></a></li>';
+            case 'instagram': echo '<li class="list-inline-item instagram"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition" href="'.esc_url($vexatheme_option['social_instagram_url']).'"><i class="fa-brands fa-instagram"></i></a></li>';
             break;
 
-            case 'skype': echo '<li class="list-inline-item"><a href="'.esc_url($vexatheme_option['social_skype_url']).'"><i class="fa-brands fa-skype"></i></a></li>';
+            case 'skype': echo '<li class="list-inline-item"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition" href="'.esc_url($vexatheme_option['social_skype_url']).'"><i class="fa-brands fa-skype"></i></a></li>';
             break;
 
-            case 'pinterest': echo '<li class="list-inline-item"><a href="'.esc_url($vexatheme_option['social_pinterest_url']).'"><i class="fa-brands fa-pinterest"></i></a></li>';
+            case 'pinterest': echo '<li class="list-inline-item"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition" href="'.esc_url($vexatheme_option['social_pinterest_url']).'"><i class="fa-brands fa-pinterest"></i></a></li>';
             break;
 
-            case 'vimeo': echo '<li class="list-inline-item"><a  href="'.esc_url($vexatheme_option['social_vimeo_url']).'"><i class="fa-brands fa-vimeo"></i></a></li>';
+            case 'vimeo': echo '<li class="list-inline-item"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition"  href="'.esc_url($vexatheme_option['social_vimeo_url']).'"><i class="fa-brands fa-vimeo"></i></a></li>';
             break;
 
-            case 'youtube': echo '<li class="list-inline-item"><a  href="'.esc_url($vexatheme_option['social_youtube_url']).'"><i class="fa-brands fa-youtube"></i></a></li>';
+            case 'youtube': echo '<li class="list-inline-item"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition"  href="'.esc_url($vexatheme_option['social_youtube_url']).'"><i class="fa-brands fa-youtube"></i></a></li>';
             break;
 
-            case 'whatsapp': echo '<li class="list-inline-item whatsapp"><a  href="'.esc_url($vexatheme_option['social_whatsapp_url']).'"><i class="fa-brands fa-whatsapp"></i></a></li>';
+            case 'whatsapp': echo '<li class="list-inline-item whatsapp"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition"  href="'.esc_url($vexatheme_option['social_whatsapp_url']).'"><i class="fa-brands fa-whatsapp"></i></a></li>';
             break;
 
-            case 'tumblr': echo '<li class="list-inline-item"><a href="'.esc_url($vexatheme_option['social_tumblr_url']).'"><i class="fa-brands fa-tumblr"></i></a></li>';
+            case 'tumblr': echo '<li class="list-inline-item"><a class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition" href="'.esc_url($vexatheme_option['social_tumblr_url']).'"><i class="fa-brands fa-tumblr"></i></a></li>';
             break;
 
         }

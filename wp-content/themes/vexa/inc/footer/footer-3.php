@@ -15,23 +15,12 @@
                     <div class="gap-2 mb-4">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"> <img src="<?php if(is_page() && !empty($vexatheme_meta['custom_header'])){ echo esc_url($vexatheme_meta['main_logo']['url']); } else{ echo esc_url($vexatheme_option['main_logo']['url']); }?>" alt="<?php echo esc_attr(get_bloginfo ('name')); ?>"> </a>
                     </div>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    <p class="text-gray-400 text-sm leading-relaxed">
                         SEOX Is A Results-Driven SEO And Digital Marketing Agency Dedicated To Helping Businesses Thrive In The Digital Landscape.
                     </p>
                     <!-- Social Icons -->
                     <div class="flex gap-3">
-                        <a href="#" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-lime-400 transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+                        <?php vexatheme_social_links(); ?>
                     </div>
                 </div>
 
@@ -81,7 +70,7 @@
 
                 <!-- Contact Information -->
                 <div>
-                    <h3 class="text-white text-lg font-semibold mb-4">Contact Information</h3>
+                    <h3 class="text-white text-lg font-semibold mb-4">Liên hệ</h3>
                     <ul class="space-y-4">
                         <li class="flex items-start gap-3">
                             <i class="fas fa-envelope text-lime-400 mt-1"></i>

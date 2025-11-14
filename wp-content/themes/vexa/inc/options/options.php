@@ -325,7 +325,7 @@ $this->sections[] = array(
             'options' => array(
                 '1' => get_template_directory_uri().'/inc/options/images/footer/footer1.jpg',
                 '2' => get_template_directory_uri().'/inc/options/images/footer/footer2.jpg',
-                '3' => get_template_directory_uri().'/inc/options/images/footer/footer3.jpg',
+                '3' => get_template_directory_uri().'/inc/options/images/footer/footer3.png',
             )
         ),
 		array(
