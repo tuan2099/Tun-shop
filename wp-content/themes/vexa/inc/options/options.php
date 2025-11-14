@@ -315,6 +315,23 @@ $this->sections[] = array(
                 'strong' => array()
             )
         ),
+        array(
+            'id' => 'description_footer',
+            'type' => 'textarea',
+            'title' => esc_html__('Description Footer', 'vexa'),
+            'validate' => 'html_custom',
+            'default' => 'SEOX Is A Results-Driven SEO And Digital Marketing Agency Dedicated To Helping Businesses Thrive In The Digital Landscape.',
+            'allowed_html' => array(
+                'a' => array(
+                    'href' => array(),
+                    'title' => array()
+                ),
+                'br' => array(),
+                'em' => array(),
+                'strong' => array()
+            )
+        )
+        ,
 
         array(
             'id' => 'footer_layout',

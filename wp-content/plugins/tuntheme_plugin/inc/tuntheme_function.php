@@ -22,6 +22,16 @@ function tuntheme_share_post_2() {?>
 <?php
 }
 
+function vexa_header_layout() {
+  global $vexatheme_option, $vexatheme_meta;
+
+  if(is_page() && !empty($vexatheme_meta['custom_header'])){
+   get_template_part('inc/header/header', $vexatheme_meta['header_layout']);
+  }
+  else{ get_template_part('inc/header/header', $vexatheme_option['header_layout']);
+  }
+}
+
 // Add basic widget
 function vexa_footer_widgets() {
   register_sidebar( array(

@@ -31,6 +31,7 @@ add_action('wp_enqueue_scripts', 'vexatheme_scripts');
 // Register All Menu
 function tuan_register_menus() {
     register_nav_menus([
+        'primary' => __('Primary Menu', 'vexa'),
         'footer_menu' => __('Footer Menu', 'vexa'),
     ]);
 }
@@ -50,3 +51,4 @@ add_filter('nav_menu_link_attributes', 'tuan_footer_menu_link_classes', 10, 3);
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+require_once get_template_directory() . '/inc/class-vexa-nav-walker.php';

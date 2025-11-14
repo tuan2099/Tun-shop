@@ -16,7 +16,7 @@
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"> <img src="<?php if(is_page() && !empty($vexatheme_meta['custom_header'])){ echo esc_url($vexatheme_meta['main_logo']['url']); } else{ echo esc_url($vexatheme_option['main_logo']['url']); }?>" alt="<?php echo esc_attr(get_bloginfo ('name')); ?>"> </a>
                     </div>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        SEOX Is A Results-Driven SEO And Digital Marketing Agency Dedicated To Helping Businesses Thrive In The Digital Landscape.
+                        <?php echo wp_kses_post($vexatheme_option['description_footer']); ?>
                     </p>
                     <!-- Social Icons -->
                     <div class="flex gap-3">
@@ -98,10 +98,5 @@
                 </div>
             </div>
         </div>
-
-        <!-- Scroll to Top Button -->
-        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 w-12 h-12 bg-lime-400 text-black rounded-full flex items-center justify-center hover:bg-lime-500 transition shadow-lg">
-            <i class="fas fa-arrow-up"></i>
-        </button>
     </footer>
 </div>
