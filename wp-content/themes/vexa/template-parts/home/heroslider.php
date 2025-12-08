@@ -7,9 +7,8 @@
 
     $bg_image        = $hero['background_image'] ?? null;
     $badge_text      = $hero['badge_text'] ?? 'SEO MARKETING AGENCY';
-    $title_line_1    = $hero['title_line_1'] ?? 'Boost Your Online';
-    $title_line_2    = $hero['title_line_2'] ?? 'Presence With SEO';
-    $description     = $hero['description'] ?? 'Drive More Traffic, Increase Visibility, And Boost Revenue With SEOX – Your Trusted SEO & Digital Marketing Partner.';
+    $title_line_1    = $hero['title_line_1'] ?? 'Thiết kế website chuẩn đẹp – hiện đại – tối ưu trải nghiệm.';
+    $description     = $hero['description'] ?? 'Chúng tôi giúp doanh nghiệp sở hữu website hiện đại, tốc độ cao, ổn định và thân thiện SEO.';
     $audit_placeholder = $hero['audit_placeholder'] ?? 'Audit Your Website';
     $audit_button_text = $hero['audit_button_text'] ?? 'Audit';
 
@@ -54,10 +53,9 @@
                 </div>
 
                 <h1
-                    class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
+                    class="text-3xl md:text-4xl  font-bold leading-tight"
                 >
-                    <?php echo esc_html( $title_line_1 ); ?><br/>
-                    <?php echo esc_html( $title_line_2 ); ?>
+                    <?php echo esc_html( $title_line_1 ); ?>
                 </h1>
 
                 <p class="text-gray-300 text-lg leading-relaxed max-w-xl">
