@@ -7,7 +7,7 @@
 
     $bg_image        = $hero['background_image'] ?? null;
     $badge_text      = $hero['badge_text'] ?? 'SEO MARKETING AGENCY';
-    $title_line_1    = $hero['title_line_1'] ?? 'Thiết kế website chuẩn đẹp – hiện đại – tối ưu trải nghiệm.';
+    $title_line_1    = $hero['title_line_1'] ?? 'Thiết kế website hiện đại tối ưu trải nghiệm.';
     $description     = $hero['description'] ?? 'Chúng tôi giúp doanh nghiệp sở hữu website hiện đại, tốc độ cao, ổn định và thân thiện SEO.';
     $audit_placeholder = $hero['audit_placeholder'] ?? 'Audit Your Website';
     $audit_button_text = $hero['audit_button_text'] ?? 'Audit';
@@ -53,7 +53,7 @@
                 </div>
 
                 <h1
-                    class="text-3xl md:text-4xl  font-bold leading-tight"
+                    class="text-3xl md:text-5xl  font-bold leading-tight"
                 >
                     <?php echo esc_html( $title_line_1 ); ?>
                 </h1>
