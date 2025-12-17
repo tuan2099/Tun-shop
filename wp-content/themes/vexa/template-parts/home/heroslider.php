@@ -80,7 +80,7 @@
                     />
                     <button
                         type="submit"
-                        class="px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-lime-400 transition"
+                        class="px-6 py-3 bg-lime-400 text-black font-semibold rounded-full hover:bg-lime-500 transition"
                     >
                         <?php echo esc_html( $audit_button_text ); ?>
                     </button>

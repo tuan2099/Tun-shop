@@ -8,8 +8,8 @@
     ]);
 ?>
 
-<section class="py-16 px-4">
-    <div class="max-w-7xl mx-auto">
+<section class="bg-[#f4f4f4]">
+    <div class="max-w-7xl mx-auto py-16 px-4">
         <!-- Hero Section -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <!-- Left Content -->
