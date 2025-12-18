@@ -34,7 +34,7 @@
                 </ol>
             </nav>
 
-            <h1 class="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
+            <h1 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-6xl">
                 <?php echo esc_html( $service_title ); ?>
             </h1>
         </div>
