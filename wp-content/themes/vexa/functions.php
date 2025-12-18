@@ -37,6 +37,11 @@ function tuan_register_menus() {
 }
 add_action('after_setup_theme', 'tuan_register_menus');
 
+function tuan_theme_supports() {
+    add_theme_support( 'post-thumbnails', array( 'post', 'page', 'service', 'pricing' ) );
+}
+add_action( 'after_setup_theme', 'tuan_theme_supports' );
+
 function tuan_footer_menu_link_classes( $atts, $item, $args ) {
     if ( $args->theme_location === 'footer_menu' ) {
         $existing_class = isset($atts['class']) ? $atts['class'] . ' ' : '';

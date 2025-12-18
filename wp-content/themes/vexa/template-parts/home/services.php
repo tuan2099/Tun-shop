@@ -93,7 +93,7 @@
                                 class="text-sm font-semibold text-gray-900 hover:text-lime-500 inline-flex items-center gap-1"
                                 aria-label="<?php echo esc_attr( sprintf( __( 'Read more about %s', 'vexa' ), get_the_title() ) ); ?>"
                             >
-                                Read More
+                                Xem thêm
                                 <span aria-hidden="true">→</span>
                             </a>
                         </div>
