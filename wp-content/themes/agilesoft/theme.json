@@ -1,0 +1,278 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "useRootPaddingAwareAlignments": true,
+        "border": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true
+        },
+        "color": {
+            "palette": [
+                {
+                    "color": "#5F8A62",
+                    "name": "Primary",
+                    "slug": "primary"
+                },
+                {
+                    "color": "#DDECDD",
+                    "name": "Secondary",
+                    "slug": "secondary"
+                },
+                {
+                    "color": "#8CB08C",
+                    "name": "Tertiary",
+                    "slug": "tertiary"
+                },
+                {
+                    "color": "#383838",
+                    "name": "Dark",
+                    "slug": "dark"
+                },
+                {
+                    "color": "#FFFFFF",
+                    "name": "Light",
+                    "slug": "light"
+                },
+                {
+                    "color": "#828282",
+                    "name": "Grey",
+                    "slug": "grey"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "960px",
+            "wideSize": "1264px"
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true,
+            "units": [ "px", "%", "em", "rem", "vw", "vh" ],
+            "spacingScale": {
+                "operator": "*",
+                "increment": 1.5,
+                "steps": 7,
+                "mediumStep": 2,
+                "unit": "rem"
+            }
+        },
+        "position": {
+            "sticky": true
+        },
+        "typography": {
+            "fluid": true,
+            "lineHeight": true,
+            "fontFamilies": [
+                {
+                    "name": "SVN-Gotham",
+                    "slug": "primary",
+                    "fontFamily": "SVN-Gotham, system-ui, sans-serif",
+                    "fontFace": [
+                        {
+                            "fontFamily": "SVN-Gotham",
+                            "fontWeight": "400",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [ "file:./assets/fonts/SVN-Gotham.woff2" ]
+                        },
+                        {
+                            "fontFamily": "SVN-Gotham",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [ "file:./assets/fonts/SVN-GothamBold.woff2" ]
+                        },
+                        {
+                            "fontFamily": "SVN-Gotham",
+                            "fontWeight": "300",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [ "file:./assets/fonts/SVN-GothamBook.woff2" ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Beautique Display",
+                    "slug": "secondary",
+                    "fontFamily": "Beautique Display, serif",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Beautique Display",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [ "file:./assets/fonts/BeautiqueDisplayMedium.woff2" ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Poppins",
+                    "slug": "poppins",
+                    "fontFamily": "'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "name": "Text S",
+                    "size": "0.875rem",
+                    "slug": "text-s"
+                },
+                {
+                    "name": "Text M",
+                    "size": "1rem",
+                    "slug": "text-m"
+                },
+                {
+                    "name": "Text L",
+                    "size": "1.25rem",
+                    "slug": "text-l"
+                },
+                {
+                    "name": "Text XL",
+                    "size": "1.5rem",
+                    "slug": "text-xl"
+                },
+                {
+                    "name": "Text 2XL",
+                    "size": "2rem",
+                    "slug": "text-2xl"
+                },
+                {
+                    "name": "Text 3XL",
+                    "size": "3rem",
+                    "slug": "text-3xl",
+                    "fluid": {
+                        "min": "2.25rem",
+                        "max": "3.0rem"
+                    }
+                },
+                {
+                    "name": "Text 4XL",
+                    "size": "4.0rem",
+                    "slug": "text-4xl",
+                    "fluid": {
+                        "min": "2.5rem",
+                        "max": "4.0rem"
+                    }
+                },
+                {
+                    "name": "Text 5XL",
+                    "size": "4.75rem",
+                    "slug": "text-5xl",
+                    "fluid": {
+                        "min": "2.86rem",
+                        "max": "4.75rem"
+                    }
+                }
+            ]
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "var(--wp--preset--color--light)",
+            "text": "var(--wp--preset--color--dark)"
+        },
+        "elements": {
+            "link": {
+                "typography": {
+                    "textDecoration": "none"
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--primary)"
+                },
+                ":hover": {
+                    "color": {
+                       "text": "var(--wp--preset--color--primary)"
+                    }
+                }
+            },
+            "button": {
+                "border": {
+                    "radius": "3px",
+                    "width": "1px",
+                    "style": "Solid",
+                    "color": "var(--wp--preset--color--primary)"
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--primary)",
+                    "background": "transparent"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var(--wp--preset--color--light)",
+                        "background": "var(--wp--preset--color--primary)"
+                    }
+                },
+                ":active": {
+                    "color": {
+                        "background": "var(--wp--preset--color--primary)"
+                    }
+                },
+                "spacing": {
+                    "padding": "calc(0.5em + 3px) calc(0.8em + 3px)"
+                },
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--text-m)",
+                    "fontFamily": "var(--wp--preset--font-family--primary)",
+                    "lineHeight": 1
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--text-3-xl)",
+                    "fontFamily": "var(--wp--preset--font-family--secondary)"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--text-2-xl)",
+                    "fontFamily": "var(--wp--preset--font-family--secondary)"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--text-xl)",
+                    "fontFamily": "var(--wp--preset--font-family--secondary)"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--text-l)"
+                }
+            },
+            "h5": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--text-m)"
+                }
+            },
+            "h6": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--text-s)"
+                }
+            }
+        },
+        "spacing": {
+            "padding": {
+                "top": "0",
+                "bottom": "0",
+                "left": "1rem",
+                "right": "1rem"
+            }
+        },
+
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--primary)",
+            "fontSize": "var(--wp--preset--font-size--text-m)",
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "lineHeight": "1.5"
+        }
+    },
+    "customTemplates": {},
+    "templateParts": {},
+    "patterns": []
+}
