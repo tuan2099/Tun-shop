@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Trang Tin Tức Công Nghệ - TechService</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1349ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#111522", // Updated to match base bg
+              "card-dark": "#192033",
+              "text-secondary": "#92a0c9",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              body: ["Noto Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <div
+          class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-8"
+        >
+          <div
+            class="layout-content-container flex flex-col max-w-[1200px] flex-1 gap-10"
+          >
+            <!-- Page Heading & Featured Section -->
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-wrap justify-between gap-3 px-4">
+                <div class="flex flex-col gap-3">
+                  <h1
+                    class="text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]"
+                  >
+                    Tin Tức &amp; Tiêu Điểm
+                  </h1>
+                  <p
+                    class="text-text-secondary text-lg font-normal leading-normal max-w-2xl"
+                  >
+                    Cập nhật những xu hướng công nghệ mới nhất, các bài viết
+                    chuyên sâu về lập trình và thiết kế web.
+                  </p>
+                </div>
+              </div>
+              <!-- Featured Grid -->
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4">
+                <!-- Main Featured Article -->
+                <div
+                  class="lg:col-span-2 group relative cursor-pointer overflow-hidden rounded-xl bg-card-dark shadow-lg hover:shadow-primary/20 transition-all duration-300 border border-transparent hover:border-primary/50"
+                >
+                  <div
+                    class="w-full h-64 sm:h-80 md:h-96 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                    data-alt="abstract futuristic cybersecurity digital lock interface"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIs39ml-R2T6Hdec_CNpOyMPXC7fbeukXgiUHvXmqKMKsHzWBnE87xZVciaKjPYqT9ftxG1GyN0K9enuGq9SZmnbbNfq70egp6D4n6sapC_sodkou9e82RhhNd_QyJBfN8mkI5DtkO5qvQLf3bTrB-MOqZhVE0_JfxkP4d9Bgh_whDaGU7SjxXg_K2_IX32QC6pjtVtXk0gBnaveyzP7Uiydo0ct-4KXWEcyTIvhskN5WNE-Am0Ssj-xUtLVQv7iYHOOOvDlV2z94');
+                    "
+                  >
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-[#111522] via-[#111522]/60 to-transparent"
+                    ></div>
+                  </div>
+                  <div
+                    class="absolute bottom-0 left-0 p-6 sm:p-8 flex flex-col gap-3"
+                  >
+                    <span
+                      class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-primary text-white w-fit"
+                      >An ninh mạng</span
+                    >
+                    <h2
+                      class="text-white text-2xl sm:text-3xl font-bold leading-tight group-hover:text-primary transition-colors"
+                    >
+                      Bảo Mật Web 2024: Những Lỗ Hổng Mới Cần Đề Phòng
+                    </h2>
+                    <div
+                      class="flex items-center gap-4 text-text-secondary text-sm"
+                    >
+                      <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[18px]"
+                          >calendar_today</span
+                        >
+                        <span>24/10/2023</span>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[18px]"
+                          >schedule</span
+                        >
+                        <span>8 phút đọc</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Side Featured Articles -->
+                <div class="flex flex-col gap-6">
+                  <div
+                    class="flex-1 group relative cursor-pointer overflow-hidden rounded-xl bg-card-dark p-4 flex flex-col justify-between border border-[#232c48] hover:border-primary/50 transition-colors"
+                  >
+                    <div class="flex gap-4 h-full">
+                      <div
+                        class="w-24 h-24 sm:w-32 sm:h-full rounded-lg bg-cover bg-center shrink-0"
+                        data-alt="UI UX design sketches on paper with mobile frame"
+                        style="
+                          background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYyuaxKiUaHXdK_p-prpDiE8NPJJSb4TFxxWU80neBzG8xbQ8EeyggWkJRjlowZUDMjjbzM7mUEZMNFNdPnHJvz1cB74OpGh_D-txK6zC-uOv9h3-Sv5GuyOIbdeBjFaerxYgiqV1x1LMosIKlaDZMkIfBsj4DlKEKiiDBqmantC1yVx3Il0JQBNWEnJ8HrAE5_D-HrGBTobwUbmoAdAI7-mRf_Sv-jfhq5B9a8LkIkQOMMwvGW0xRSOw94BLpbTHfYnabcTzelPs');
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-2">
+                        <span
+                          class="text-primary text-xs font-bold uppercase tracking-wider"
+                          >UI/UX Design</span
+                        >
+                        <h3
+                          class="text-white text-lg font-bold leading-tight line-clamp-3 group-hover:text-primary transition-colors"
+                        >
+                          5 Nguyên Tắc Gestalt Trong Thiết Kế Giao Diện Hiện Đại
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex-1 group relative cursor-pointer overflow-hidden rounded-xl bg-card-dark p-4 flex flex-col justify-between border border-[#232c48] hover:border-primary/50 transition-colors"
+                  >
+                    <div class="flex gap-4 h-full">
+                      <div
+                        class="w-24 h-24 sm:w-32 sm:h-full rounded-lg bg-cover bg-center shrink-0"
+                        data-alt="Coding screen with colorful syntax highlighting dark mode"
+                        style="
+                          background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZm8Let89vZPxa25A8QH0TL-I_xOSjCsjD-U6i-4zQAUVzErVN0AiC6PLn3xf-ITBwO975cpl_Bi4NlD_NaZe2ME0Np2wYCYg7Sen6hacRnRU_0EOKk1VfL6KnHE1Hcyas1rw7ZV8PCqN_-qmFDGF6RPzKEYiE9sPwa1QPe3ZpNBGdNMyRZSwsREs7Rk3KkV2aea-wqDUWEsBLhvvBjFTWRqnKi-KMlsdyBChl5YxY54lSP91VK2O1z6mBdCt8SkUOiJjxioFAjnY');
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-2">
+                        <span
+                          class="text-primary text-xs font-bold uppercase tracking-wider"
+                          >Frontend</span
+                        >
+                        <h3
+                          class="text-white text-lg font-bold leading-tight line-clamp-3 group-hover:text-primary transition-colors"
+                        >
+                          React vs Vue: Lựa Chọn Nào Cho Dự Án Startup 2024?
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Filter & Search Section -->
+            <div
+              class="sticky top-[70px] z-40 bg-[#111522]/95 backdrop-blur-sm pt-4 pb-2 border-b border-[#232c48] px-4"
+            >
+              <div
+                class="flex flex-col md:flex-row items-center justify-between gap-4"
+              >
+                <!-- Categories -->
+                <div class="w-full md:w-auto overflow-x-auto no-scrollbar">
+                  <div class="flex items-center gap-6 min-w-max">
+                    <a
+                      class="relative flex flex-col items-center justify-center text-white pb-3 group"
+                      href="#"
+                    >
+                      <p
+                        class="text-sm font-bold leading-normal tracking-[0.015em]"
+                      >
+                        Tất cả
+                      </p>
+                      <span
+                        class="absolute bottom-0 h-[3px] w-full bg-primary rounded-t-full"
+                      ></span>
+                    </a>
+                    <a
+                      class="relative flex flex-col items-center justify-center text-text-secondary hover:text-white transition-colors pb-3 group"
+                      href="#"
+                    >
+                      <p
+                        class="text-sm font-bold leading-normal tracking-[0.015em]"
+                      >
+                        Web Design
+                      </p>
+                      <span
+                        class="absolute bottom-0 h-[3px] w-0 bg-primary rounded-t-full transition-all group-hover:w-full"
+                      ></span>
+                    </a>
+                    <a
+                      class="relative flex flex-col items-center justify-center text-text-secondary hover:text-white transition-colors pb-3 group"
+                      href="#"
+                    >
+                      <p
+                        class="text-sm font-bold leading-normal tracking-[0.015em]"
+                      >
+                        Backend
+                      </p>
+                      <span
+                        class="absolute bottom-0 h-[3px] w-0 bg-primary rounded-t-full transition-all group-hover:w-full"
+                      ></span>
+                    </a>
+                    <a
+                      class="relative flex flex-col items-center justify-center text-text-secondary hover:text-white transition-colors pb-3 group"
+                      href="#"
+                    >
+                      <p
+                        class="text-sm font-bold leading-normal tracking-[0.015em]"
+                      >
+                        Frontend
+                      </p>
+                      <span
+                        class="absolute bottom-0 h-[3px] w-0 bg-primary rounded-t-full transition-all group-hover:w-full"
+                      ></span>
+                    </a>
+                    <a
+                      class="relative flex flex-col items-center justify-center text-text-secondary hover:text-white transition-colors pb-3 group"
+                      href="#"
+                    >
+                      <p
+                        class="text-sm font-bold leading-normal tracking-[0.015em]"
+                      >
+                        AI Tools
+                      </p>
+                      <span
+                        class="absolute bottom-0 h-[3px] w-0 bg-primary rounded-t-full transition-all group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Search -->
+                <div class="w-full md:w-auto md:min-w-[300px]">
+                  <label
+                    class="flex w-full items-center h-10 rounded-lg bg-[#232c48] focus-within:ring-2 focus-within:ring-primary/50 transition-all"
+                  >
+                    <div
+                      class="flex items-center justify-center pl-3 text-text-secondary"
+                    >
+                      <span class="material-symbols-outlined">search</span>
+                    </div>
+                    <input
+                      class="w-full bg-transparent border-none text-white placeholder:text-text-secondary focus:ring-0 text-sm px-3"
+                      placeholder="Tìm kiếm bài viết, chủ đề..."
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- Main Content Grid -->
+            <div class="px-4 pb-12">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Article 1 -->
+                <article
+                  class="flex flex-col h-full rounded-xl bg-card-dark overflow-hidden border border-[#232c48] hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center relative"
+                    data-alt="Code editor on monitor with matrix digital rain effect"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6e3iEnI2mB6CjwQtMjS-CJ2n_vtNjCXLx3k6-xPizJngjP3naf7gmUA0dTpproJAMy1mslCYgYLMnAfzt6oY48vEMbMHkScwaKn-uthiEsMFzamvEhQNLb9B-18b0LZ_Xr8Q6XVgWqO2kwK07qosFCP-56eHJABUECVoee7a8GPKIAOnQP6KjipbKxTfdpvcomnedlfJX1rtIeNhWiJA9ycBy869dm4iHTwbak6kDcrD9yrEwqkfDdxOSdTLyE-NT7hS6sadK9Jc');
+                    "
+                  >
+                    <div
+                      class="absolute top-3 left-3 bg-[#111522]/80 backdrop-blur-sm px-3 py-1 rounded-md border border-white/10"
+                    >
+                      <span class="text-xs font-bold text-primary"
+                        >Backend</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 p-5 gap-3">
+                    <h3
+                      class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2"
+                    >
+                      Tối Ưu Hóa Query Database Cho Website High-Traffic
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm leading-relaxed line-clamp-3"
+                    >
+                      Khám phá các kỹ thuật indexing, caching và query
+                      optimization để đảm bảo hệ thống của bạn luôn mượt mà.
+                    </p>
+                    <div
+                      class="mt-auto pt-4 flex items-center justify-between border-t border-[#232c48]"
+                    >
+                      <span class="text-text-secondary text-xs"
+                        >Phạm Minh Đức</span
+                      >
+                      <span class="text-text-secondary text-xs"
+                        >20/10/2023</span
+                      >
+                    </div>
+                  </div>
+                </article>
+                <!-- Article 2 -->
+                <article
+                  class="flex flex-col h-full rounded-xl bg-card-dark overflow-hidden border border-[#232c48] hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center relative"
+                    data-alt="React JS logo floating in 3D dark space"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1OhjJBjkaE_A93SEhC8k_sceJ3o2f4I0pc5TlinnX_M8pZAsu91SxzMq77qIf8eTgW7AyohPCH8nDg4mpkYEn2vMPFRKKPgio9ywtwYwhnCoQuuU_ltSmvr-yMa1tDNaDGztp_AWZyXhOFaRJbCFiDqosTRXF_WdkYZMgopT0Qx9giKKRNANyErZMlib5A3qbMa0cYGJ9WtZiDp7tZnKPUPCDJz2mSvSvSuiFDy7CPAMmhmPpT4GCRTI4V84-ptx-Nv9b_lZQ5j4');
+                    "
+                  >
+                    <div
+                      class="absolute top-3 left-3 bg-[#111522]/80 backdrop-blur-sm px-3 py-1 rounded-md border border-white/10"
+                    >
+                      <span class="text-xs font-bold text-primary"
+                        >Frontend</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 p-5 gap-3">
+                    <h3
+                      class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2"
+                    >
+                      Top 5 Frameworks Frontend Đáng Chú Ý Năm 2024
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm leading-relaxed line-clamp-3"
+                    >
+                      Svelte, SolidJS hay vẫn là React? Cùng phân tích ưu nhược
+                      điểm của các công nghệ đang lên ngôi.
+                    </p>
+                    <div
+                      class="mt-auto pt-4 flex items-center justify-between border-t border-[#232c48]"
+                    >
+                      <span class="text-text-secondary text-xs"
+                        >Nguyễn Thu Hà</span
+                      >
+                      <span class="text-text-secondary text-xs"
+                        >18/10/2023</span
+                      >
+                    </div>
+                  </div>
+                </article>
+                <!-- Article 3 -->
+                <article
+                  class="flex flex-col h-full rounded-xl bg-card-dark overflow-hidden border border-[#232c48] hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center relative"
+                    data-alt="Artificial Intelligence neural network visualization glowing blue"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDaEF7mjl1q-BmprbjDc4FXkS0M4_WcWj05yBy5XRbZtqQqYYRHjMK2MMVHaeIyWS3yVz0Jd0jTTOtHUANBdA6DWcyAv9NlFacLM8VlteBYbI7uG7CrggN7E_1VWr2_v1Zjef9yftCsJjhhKyTo2RyXGmeLUvwAR_S_M0bI_lQAg82rm98Z9HfpG-y8sA8AAC6gZWg0YKWBVeSClRevVHjbfKTu3bfjO6cPDQ3DEDQibrgOpkey7aiHRXxnk_qrTpFbwIFlTbka8Q4');
+                    "
+                  >
+                    <div
+                      class="absolute top-3 left-3 bg-[#111522]/80 backdrop-blur-sm px-3 py-1 rounded-md border border-white/10"
+                    >
+                      <span class="text-xs font-bold text-primary"
+                        >AI Tools</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 p-5 gap-3">
+                    <h3
+                      class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2"
+                    >
+                      Sử Dụng AI Để Tự Động Hóa Quy Trình Code Review
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm leading-relaxed line-clamp-3"
+                    >
+                      Làm thế nào các công cụ như GitHub Copilot và ChatGPT có
+                      thể giúp team của bạn code sạch hơn và nhanh hơn.
+                    </p>
+                    <div
+                      class="mt-auto pt-4 flex items-center justify-between border-t border-[#232c48]"
+                    >
+                      <span class="text-text-secondary text-xs"
+                        >Trần Văn Tú</span
+                      >
+                      <span class="text-text-secondary text-xs"
+                        >15/10/2023</span
+                      >
+                    </div>
+                  </div>
+                </article>
+                <!-- Article 4 -->
+                <article
+                  class="flex flex-col h-full rounded-xl bg-card-dark overflow-hidden border border-[#232c48] hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center relative"
+                    data-alt="Minimalist web design layout on laptop screen"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtrxLZGVus19gVD_c7Y7R3t-1aEMT628-5UFCHbeWb4zARfLsH41yF-cuWA2VegYohLpi09aXUWayu7vAn4MzXOPTdWCL-Syzie0hTEoynkjcOqeG_TRYnQHBzwU4ZAWhFqQWssLLe591cDLzgKNEfi7easHq6tuAYQUWgqRuD_UbBUgmD_0ZstGiAVU2lEl-BASgkwlq5GBaE2tGWX68GcRneFRksIdHHPFrFUjPfBlEnOOL312krXQcNh1LBe8YMXl4JrB1qRYg');
+                    "
+                  >
+                    <div
+                      class="absolute top-3 left-3 bg-[#111522]/80 backdrop-blur-sm px-3 py-1 rounded-md border border-white/10"
+                    >
+                      <span class="text-xs font-bold text-primary"
+                        >Web Design</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 p-5 gap-3">
+                    <h3
+                      class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2"
+                    >
+                      Xu Hướng Màu Sắc Trong Thiết Kế Web 2024
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm leading-relaxed line-clamp-3"
+                    >
+                      Từ Neo-Brutalism đến Pastel Gradients, hãy xem bảng màu
+                      nào sẽ thống trị các website năm nay.
+                    </p>
+                    <div
+                      class="mt-auto pt-4 flex items-center justify-between border-t border-[#232c48]"
+                    >
+                      <span class="text-text-secondary text-xs"
+                        >Lê Thị Mai</span
+                      >
+                      <span class="text-text-secondary text-xs"
+                        >12/10/2023</span
+                      >
+                    </div>
+                  </div>
+                </article>
+                <!-- Article 5 -->
+                <article
+                  class="flex flex-col h-full rounded-xl bg-card-dark overflow-hidden border border-[#232c48] hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center relative"
+                    data-alt="Close up of computer code on dark screen"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZGghT0ZwpGrP8VWeBlxg1KkHymC3X2cRI_HqU_7TIlmQQ0319mtuIEt1ui8Lr0tEtRA6wZorey9D-ChS6GeRdnNTc2aGtd44nIWw5audcqXNq_Pvb-EWRGPaWAvewRZ3D68BOpf15PniOOLXKTbr_oB7GsgoRpzQ9x52k9o6Wsl7vxFHb_Dz5a6BsqurPPU9e5LfRyAWzOkQICzjJRbTioMQzuWGbZFdQH4Gj5liVq5S66Cv2XMA1fZruY07f6jBYm9OO3D9ALZI');
+                    "
+                  >
+                    <div
+                      class="absolute top-3 left-3 bg-[#111522]/80 backdrop-blur-sm px-3 py-1 rounded-md border border-white/10"
+                    >
+                      <span class="text-xs font-bold text-primary"
+                        >Backend</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 p-5 gap-3">
+                    <h3
+                      class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2"
+                    >
+                      Hiểu Rõ Về Microservices Architecture
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm leading-relaxed line-clamp-3"
+                    >
+                      Khi nào nên chuyển từ Monolith sang Microservices? Bài
+                      viết phân tích chi tiết cho các Tech Lead.
+                    </p>
+                    <div
+                      class="mt-auto pt-4 flex items-center justify-between border-t border-[#232c48]"
+                    >
+                      <span class="text-text-secondary text-xs"
+                        >Nguyễn Hoàng Nam</span
+                      >
+                      <span class="text-text-secondary text-xs"
+                        >10/10/2023</span
+                      >
+                    </div>
+                  </div>
+                </article>
+                <!-- Article 6 -->
+                <article
+                  class="flex flex-col h-full rounded-xl bg-card-dark overflow-hidden border border-[#232c48] hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-full aspect-video bg-cover bg-center relative"
+                    data-alt="Team working together on startup project with laptop"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9XIev11u3lgFcuFtrQkOAjs4HyovBthUEtlNWcL6rWZhs143HGEK--YYSbizMrVny-wF4J0xHJKjpTT5EfbdnpaIMNQy4WBraNL-kcXDbCrZvowiW336Yr4dB5Feym8xzVUJf7nsCkVi31AmWecPfI1CkOVHSqyXPHcp3_kZTBgN9DbOa4sIotvIVAtJNJMbbsyWVMnyzSQF5k67YRN5Sdz2MWCSU3hSXXSwVwN77a44ACr3lowNB8LWxRRE1TwA98snR4JXF2iw');
+                    "
+                  >
+                    <div
+                      class="absolute top-3 left-3 bg-[#111522]/80 backdrop-blur-sm px-3 py-1 rounded-md border border-white/10"
+                    >
+                      <span class="text-xs font-bold text-primary">Career</span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 p-5 gap-3">
+                    <h3
+                      class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2"
+                    >
+                      Kỹ Năng Mềm Quan Trọng Cho Developer Senior
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm leading-relaxed line-clamp-3"
+                    >
+                      Coding giỏi là chưa đủ. Để thăng tiến, bạn cần giao tiếp,
+                      quản lý thời gian và leadership.
+                    </p>
+                    <div
+                      class="mt-auto pt-4 flex items-center justify-between border-t border-[#232c48]"
+                    >
+                      <span class="text-text-secondary text-xs"
+                        >Hoàng Tuấn Anh</span
+                      >
+                      <span class="text-text-secondary text-xs"
+                        >08/10/2023</span
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <!-- Pagination -->
+              <div class="flex justify-center mt-12">
+                <button
+                  class="flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-[#232c48] bg-[#192033] text-white hover:bg-primary hover:border-primary transition-all duration-300 group"
+                >
+                  <span class="text-sm font-bold">Xem thêm bài viết</span>
+                  <span
+                    class="material-symbols-outlined text-sm group-hover:translate-y-0.5 transition-transform"
+                    >arrow_downward</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
