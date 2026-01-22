@@ -62,48 +62,6 @@
             "fluid": true,
             "lineHeight": true,
             "fontFamilies": [
-                {
-                    "name": "SVN-Gotham",
-                    "slug": "primary",
-                    "fontFamily": "SVN-Gotham, system-ui, sans-serif",
-                    "fontFace": [
-                        {
-                            "fontFamily": "SVN-Gotham",
-                            "fontWeight": "400",
-                            "fontStyle": "italic",
-                            "fontStretch": "normal",
-                            "src": [ "file:./assets/fonts/SVN-Gotham.woff2" ]
-                        },
-                        {
-                            "fontFamily": "SVN-Gotham",
-                            "fontWeight": "700",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [ "file:./assets/fonts/SVN-GothamBold.woff2" ]
-                        },
-                        {
-                            "fontFamily": "SVN-Gotham",
-                            "fontWeight": "300",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [ "file:./assets/fonts/SVN-GothamBook.woff2" ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Beautique Display",
-                    "slug": "secondary",
-                    "fontFamily": "Beautique Display, serif",
-                    "fontFace": [
-                        {
-                            "fontFamily": "Beautique Display",
-                            "fontWeight": "500",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [ "file:./assets/fonts/BeautiqueDisplayMedium.woff2" ]
-                        }
-                    ]
-                },
                 {   
                     "name": "Be Vietnam Pro",
                     "slug": "bevietnampro",
