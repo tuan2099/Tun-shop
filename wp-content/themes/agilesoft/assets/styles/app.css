@@ -1,1 +1,36 @@
-/*# sourceMappingURL=app.css.map */
+.service-card {
+  border-radius: 24px;
+  padding: 28px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+  text-align: center;
+}
+.service-card:hover {
+  background: linear-gradient(180deg, #ff9f5a 0%, #f58220 100%);
+  transform: translateY(-4px);
+}
+.service-card:hover h2,
+.service-card:hover h3,
+.service-card:hover a {
+  color: #fff !important;
+}
+.service-card.is-active {
+  background: linear-gradient(180deg, #ff9f5a 0%, #f58220 100%);
+}
+.service-card.is-active h2,
+.service-card.is-active h3,
+.service-card.is-active a {
+  color: #fff !important;
+}
+
+.custom-image-services {
+  background-color: #FEF1E9;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}/*# sourceMappingURL=app.css.map */

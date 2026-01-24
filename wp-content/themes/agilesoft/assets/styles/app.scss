@@ -1,1 +1,52 @@
-body {}
+$primary-start: #ff9f5a;
+$primary-end: #f58220;
+$text-light: #fff;
+
+.service-card {
+  border-radius: 24px;
+  padding: 28px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+  transition: .25s ease;
+  text-align: center;
+
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      $primary-start 0%,
+      $primary-end 100%
+    );
+    transform: translateY(-4px);
+
+    h2,
+    h3,
+    a {
+      color: $text-light !important;
+    }
+  }
+
+  &.is-active {
+    background: linear-gradient(
+      180deg,
+      $primary-start 0%,
+      $primary-end 100%
+    );
+
+    h2,
+    h3,
+    a {
+      color: $text-light !important;
+    }
+  }
+}
+
+.custom-image-services {
+    background-color: #FEF1E9;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+}
