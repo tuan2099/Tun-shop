@@ -1,5 +1,6 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
+if (!defined('ABSPATH'))
+  exit;
 
 add_action('init', function () {
 
@@ -15,7 +16,7 @@ add_action('init', function () {
     'has_archive' => true,
     'show_in_rest' => true,
     'rest_base' => 'products',
-    'supports' => ['title','editor','thumbnail','excerpt'],
+    'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
     'rewrite' => ['slug' => 'products'],
     'menu_icon' => 'dashicons-cart',
   ]);
@@ -32,7 +33,7 @@ add_action('init', function () {
     'has_archive' => true,
     'show_in_rest' => true,
     'rest_base' => 'services',
-    'supports' => ['title','editor','thumbnail','excerpt'],
+    'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
     'rewrite' => ['slug' => 'services'],
     'menu_icon' => 'dashicons-hammer',
   ]);
@@ -49,7 +50,7 @@ add_action('init', function () {
     'has_archive' => true,
     'show_in_rest' => true,
     'rest_base' => 'technologies',
-    'supports' => ['title','editor','thumbnail','excerpt'],
+    'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
     'rewrite' => ['slug' => 'technologies'],
     'menu_icon' => 'dashicons-admin-generic',
   ]);
@@ -66,7 +67,7 @@ add_action('init', function () {
     'has_archive' => true,
     'show_in_rest' => true,
     'rest_base' => 'industries',
-    'supports' => ['title','editor','thumbnail','excerpt'],
+    'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
     'rewrite' => ['slug' => 'industries'],
     'menu_icon' => 'dashicons-networking',
   ]);
